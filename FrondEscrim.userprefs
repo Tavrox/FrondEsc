@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameLoop.cs">
+    <Files>
+      <File FileName="..\..\Unity\Rocket5_Skillswap\Rocket5_Skillswap\Assets\Scripts\Character.cs" Line="107" Column="17" />
+      <File FileName="..\..\Unity\Rocket5_Skillswap\Rocket5_Skillswap\Assets\Scripts\Player1.cs" Line="25" Column="27" />
+      <File FileName="Assets\Scripts\CharacterAnims.cs" Line="41" Column="40" />
+      <File FileName="Assets\Scripts\Character.cs" Line="137" Column="4" />
+      <File FileName="Assets\Scripts\Player.cs" Line="29" Column="20" />
+      <File FileName="Assets\Scripts\Menus.cs" Line="24" Column="4" />
+      <File FileName="Assets\Scripts\GameLoop.cs" Line="23" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

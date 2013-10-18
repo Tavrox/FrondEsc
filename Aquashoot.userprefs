@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Unity\Rocket5_Skillswap\Rocket5_Skillswap\Assets\Scripts\Player1.cs">
+    <Files>
+      <File FileName="..\..\Unity\Rocket5_Skillswap\Rocket5_Skillswap\Assets\Scripts\Player1.cs" Line="11" Column="16" />
+      <File FileName="..\..\Unity\Rocket5_Skillswap\Rocket5_Skillswap\Assets\Scripts\Character.cs" Line="66" Column="29" />
+      <File FileName="Assets\Scripts\Player.cs" Line="25" Column="20" />
+      <File FileName="Assets\Scripts\Character.cs" Line="15" Column="40" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
