@@ -218,4 +218,9 @@ public class Character : MonoBehaviour {
 	{
 		vectorMove.y -= pfPassSpeed;
 	}
+	
+	public void testPublic()
+	{
+		
+	}
 }

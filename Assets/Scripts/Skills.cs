@@ -7,10 +7,14 @@ public class Skills : MonoBehaviour {
 	private enum skillEnum { Physic, Magic, Shield };
 	private skillEnum skillType;
 	private float cooldown;
+	
+	public Bullets bull;
 	private int bulletSizeX;
 	private int bulletSizeY;
+	
 	private enum goThroughTypes { Walls, Platforms, Enemies };
 	private goThroughTypes goThrough;
+	
 	private enum specialEffectsTypes { Dash_Left, Dash_Right, Etherate, Dash_up};
 	private specialEffectsTypes specialEffects;
 
@@ -23,5 +27,15 @@ public class Skills : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+	
+	void launchBullets()
+	{	
+		bull.newBullet();
+		bull.dir = Vector3.left;
+	}
+	void launchShield()
+	{
+		
 	}
 }
