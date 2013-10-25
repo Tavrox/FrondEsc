@@ -1,0 +1,105 @@
+﻿Merge branch 'master' of https://github.com/Tavrox/FrondEsc
+
+Conflicts:
+	Assets/Scenes/Scene.unity
+	Library/assetDatabase3
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 1 and 1 different commit each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#   (use "git commit" to conclude merge)
+#
+# Changes to be committed:
+#
+#	modified:   Assembly-CSharp-Editor-vs.csproj
+#	modified:   Assembly-CSharp-Editor.csproj
+#	modified:   Assembly-CSharp-vs.csproj
+#	modified:   Assembly-CSharp.csproj
+#	modified:   Library/guidmapper
+#	modified:   Library/metadata/0c/0c6f33037c84aec45a17c44332c4912e
+#	new file:   Library/metadata/0d/0db412ca2c809b740adb9a39dee6aeb2
+#	modified:   Library/metadata/0e/0ef74816479fc0048b857a0a52b935cd
+#	modified:   Library/metadata/12/120c39f39d2670540a49dfe25e3aa419
+#	modified:   Library/metadata/17/1708694e5464ee64f8825355a6d98df3
+#	modified:   Library/metadata/19/19b363cdf71206543988eedb6709a7c0
+#	modified:   Library/metadata/25/2512bdd62bf20b94595eb69c5537f512
+#	modified:   Library/metadata/27/27bb5ea35ae097d4b8a1dcd06557ab38
+#	modified:   Library/metadata/2f/2f63d4e5bf491dd4a8d72feea658c297
+#	modified:   Library/metadata/33/338248a3d5d47c3498f61bf9a460908c
+#	modified:   Library/metadata/35/35a5b8d585b9724439b369768d287387
+#	modified:   Library/metadata/37/374837f4cf9be0349919b6994c367ad0
+#	modified:   Library/metadata/38/3846215a26fbeb94694e4d0ba7ce4ebb
+#	modified:   Library/metadata/3a/3a25f4057f12bb44e95121a4cd95b73d
+#	modified:   Library/metadata/3a/3a2d5acba23bdd741a5bcb2145897602
+#	modified:   Library/metadata/3c/3c54f537b18be2641801238cbcc83184
+#	modified:   Library/metadata/41/41118ea5cdb3a624fa5b6c7d0ce3d179
+#	modified:   Library/metadata/4b/4b58ac99f3962884f9454629e95e9550
+#	modified:   Library/metadata/4c/4c709280ec816744c8ff451ed16efeb1
+#	modified:   Library/metadata/4f/4fb13e99ff4b29140af03daddd9daa06
+#	modified:   Library/metadata/52/521257714fc9e437a9163df2d37f2ea2
+#	modified:   Library/metadata/52/52566e54bb9c5084ea732498a4a5d9f6
+#	modified:   Library/metadata/52/5273cf41de20842a5917d8346dffe707
+#	modified:   Library/metadata/56/56b473f88977c8d41a3eb80ed8f78b0f
+#	modified:   Library/metadata/57/57f73ebb4e482ba41b17d07575fd71c7
+#	modified:   Library/metadata/5c/5c3369816ee490b4c98f268dcb904aa0
+#	modified:   Library/metadata/5e/5ec7ad1d21e42444fb9d2a86541d9cd2
+#	modified:   Library/metadata/60/605fc72e8791e7440a18b58e0a6b3770
+#	modified:   Library/metadata/60/60b7285f54e160b4e9f131ee88f8e5df
+#	modified:   Library/metadata/65/6516b292dc01ed44d8e3c2f124f45984
+#	modified:   Library/metadata/65/652ae80f4164b154a91936ba3e8338fe
+#	modified:   Library/metadata/68/6851ad0447bd6454f8602d71b4303a33
+#	modified:   Library/metadata/71/71531ce6f43ba8040bbdc819c1a275fa
+#	modified:   Library/metadata/75/7586ebebdbda84c4489822a811ea686d
+#	modified:   Library/metadata/7a/7ad68cdc562564964ad1bc48c61a290e
+#	modified:   Library/metadata/7f/7fa9dd2083c83764aa388e5ffd97d1b8
+#	new file:   Library/metadata/80/8052bc4dbf37d6048b5ee6938f3e9932
+#	modified:   Library/metadata/82/82e1917728cfd634bab43e86b746ffdb
+#	modified:   Library/metadata/86/860e79f643c898346957494a46b19de2
+#	modified:   Library/metadata/86/86b3a31a3084925468d9004d23c8f84b
+#	modified:   Library/metadata/87/87f6f9e8e8bbfd245aca99bca6dd0577
+#	modified:   Library/metadata/88/88d10d435d431a141873542480bd2fe7
+#	modified:   Library/metadata/8d/8d2a40ae78ff6f645921ce86c5fdb929
+#	modified:   Library/metadata/8d/8dca52a43774b364696cf05184b8d8bb
+#	modified:   Library/metadata/91/91653cc554b27a740bc837bf95566384
+#	modified:   Library/metadata/91/919220ebcbadf5c45ad36276713b6c83
+#	modified:   Library/metadata/91/919e28c2667d01142996cac74fe0bf50
+#	modified:   Library/metadata/93/93cb45d44c16f45a4bbd5099fe096c20
+#	modified:   Library/metadata/96/96d6f8b3d9cc85b45a01bb7efb15c22b
+#	modified:   Library/metadata/98/980993cd80c14c54fa6bd6985c3d291d
+#	modified:   Library/metadata/98/98770bad344964d10a3f5499c41fa23e
+#	modified:   Library/metadata/99/99ed725499f15914fae81f3ea5507d50
+#	modified:   Library/metadata/9b/9bd27e5531dba674fb39217e9c18e850
+#	modified:   Library/metadata/9d/9d709e61d38033647a951749ea95d494
+#	modified:   Library/metadata/9e/9ef90458a1ebaf44a9fcce98d3815177
+#	modified:   Library/metadata/a5/a51fd2a6c46272f44a156a2ea07179a4
+#	modified:   Library/metadata/b4/b41ae8af3d0edc146b1e69a0d648179b
+#	modified:   Library/metadata/b6/b68b11cac1ab04f95985e32ea67b8435
+#	modified:   Library/metadata/bc/bc031425ec97c8b44b69c6aabe1176cc
+#	modified:   Library/metadata/bc/bc0dd3d2d02ba284e8e41c8bba446238
+#	modified:   Library/metadata/bc/bcb3151926952d240ba095713745f034
+#	new file:   Library/metadata/c8/c8541fa9d9f31fd4e8f9c32495092790
+#	modified:   Library/metadata/cd/cd390f02353d5db4995a75b0ed7f8d45
+#	modified:   Library/metadata/d2/d2c4aec3896e2f24b82ac9a86280eb3b
+#	modified:   Library/metadata/d6/d6bc01eb564f142a1ada6ced5215636a
+#	new file:   Library/metadata/d7/d790d0355b088f34a91e4db38f777e83
+#	modified:   Library/metadata/de/de27da8c1570bd2418c66d58c17b5571
+#	modified:   Library/metadata/df/df4cc40b60bf2ee419dc89d7f1750cb8
+#	modified:   Library/metadata/e6/e6ff3e5cad86af547a0740848c3ffdf1
+#	modified:   Library/metadata/e7/e74123ddb118a724e95dfdaa45987bf4
+#	modified:   Library/metadata/f2/f20ebfd772fe1f14da0460ace5134ea8
+#	modified:   Library/metadata/f2/f23e6a744f8894e43ac468850e66ee2d
+#	modified:   Library/metadata/f9/f99b86cba1791534a8d2adfe0a58b636
+#	modified:   Library/metadata/fd/fd8893418ef94d548ba325c268e45150
+#
+
