@@ -43,7 +43,7 @@ public class Character : MonoBehaviour
 	[HideInInspector] public bool alive = true;
 	[HideInInspector] public Vector3 spawnPos;
 	
-	public Transform thisTransform;
+	[HideInInspector] public Transform thisTransform;
 	
 	private float moveVel = 4f;
 //	private float walkVel = 3f; // walk while carrying ball

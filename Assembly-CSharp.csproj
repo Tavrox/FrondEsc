@@ -127,12 +127,14 @@
     <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTSounds.cs" />
     <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTTimeCycle.cs" />
     <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTTouch.cs" />
+    <Compile Include="Assets\Scripts\Background.cs" />
     <Compile Include="Assets\Scripts\Characters\Character.cs" />
     <Compile Include="Assets\Scripts\Characters\CharacterAnims.cs" />
     <Compile Include="Assets\Scripts\Characters\Enemy.cs" />
     <Compile Include="Assets\Scripts\Characters\Player.cs" />
     <Compile Include="Assets\Scripts\Characters\Zombie.cs" />
     <Compile Include="Assets\Scripts\Dialog.cs" />
+    <Compile Include="Assets\Scripts\GameLoop.cs" />
     <Compile Include="Assets\Scripts\LevelDoor.cs" />
     <Compile Include="Assets\Scripts\Managers\GUIManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameEventManager.cs" />
