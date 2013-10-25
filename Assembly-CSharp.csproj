@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2E5E8461-2500-ACE5-52BB-B973AE1AB406}</ProjectGuid>
+    <ProjectGuid>{2CA5BE5F-7860-4F76-64A7-0D06BDD40B1B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
@@ -45,29 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPAnimationEx.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPMeshAnimationEx.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPMeshSpriteAnimationEx.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPMeshTextureEx.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPMeshTextureNoHelperEx.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPSkinnedMeshTextureEx.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPSpriteAnimationEx.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPSpriteEx.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPSpriteTextureEx.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Extended\TPStaticSpriteEx.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Helpers\TPAtlasesData.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Helpers\TPHelper.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\AnimationApiTest.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\AtlasGUIAnimationExample.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\AtlasGUIExample.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\Atlases.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\MyAtlasController.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\MyFireAnimation.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\MyMeshTexture.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\MyRotation.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\MyTeslaAnimation.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\Tutorial\Scripts\MyTextures.cs" />
-    <Compile Include="Assets\GFX\weapons\NewBehaviourScript.cs" />
     <Compile Include="Assets\Orthello\Standard Assets\OT\Animation\OTMovementController.cs" />
     <Compile Include="Assets\Orthello\Standard Assets\OT\Data\OTDataReader.cs" />
     <Compile Include="Assets\Orthello\Standard Assets\OT\Data\OTTextDataReader.cs" />
@@ -150,16 +127,19 @@
     <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTSounds.cs" />
     <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTTimeCycle.cs" />
     <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTTouch.cs" />
-    <Compile Include="Assets\Scripts\Background.cs" />
-    <Compile Include="Assets\Scripts\Bullets.cs" />
-    <Compile Include="Assets\Scripts\Character.cs" />
-    <Compile Include="Assets\Scripts\CharacterAnims.cs" />
-    <Compile Include="Assets\Scripts\Cinematic.cs" />
-    <Compile Include="Assets\Scripts\Enemies.cs" />
-    <Compile Include="Assets\Scripts\GameLoop.cs" />
-    <Compile Include="Assets\Scripts\Menus.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\Skills.cs" />
+    <Compile Include="Assets\Scripts\Characters\Character.cs" />
+    <Compile Include="Assets\Scripts\Characters\CharacterAnims.cs" />
+    <Compile Include="Assets\Scripts\Characters\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Characters\Player.cs" />
+    <Compile Include="Assets\Scripts\Characters\Zombie.cs" />
+    <Compile Include="Assets\Scripts\Dialog.cs" />
+    <Compile Include="Assets\Scripts\LevelDoor.cs" />
+    <Compile Include="Assets\Scripts\Managers\GUIManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\GameEventManager.cs" />
+    <Compile Include="Assets\Scripts\ParaOpen.cs" />
+    <Compile Include="Assets\Scripts\Skills\Bullets.cs" />
+    <Compile Include="Assets\Scripts\Skills\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Skills\Skills.cs" />
     <Compile Include="Assets\iTween\Plugins\iTween.cs" />
     <Compile Include="Assets\iTween\Sample\MoveSample.cs" />
     <Compile Include="Assets\iTween\Sample\RotateSample.cs" />
@@ -168,26 +148,18 @@
     <None Include="Assets\GFX\scenery\scenery.xml" />
     <None Include="Assets\Production\gfx\background.xml" />
     <None Include="Assets\GFX\background\background.xml" />
+    <None Include="Assets\GFX\prod_test\skill.xml" />
+    <None Include="Assets\GFX\character\zombie.xml" />
     <None Include="Assets\Orthello\-Read-Me.txt" />
-    <None Include="Assets\Extensions\TexturePacker\Tutorial\Resources\example_data.txt" />
-    <None Include="Assets\Extensions\TexturePacker\Tutorial\Resources\TutorialAtlas_data.txt" />
+    <None Include="Assets\GFX\weapons\sk_bulls.xml" />
     <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
+    <None Include="Assets\GFX\weapons\skill.xml" />
     <None Include="Assets\Production\gfx\player.xml" />
+    <None Include="Assets\GFX\prod_test\scenery.xml" />
+    <None Include="Assets\GFX\prod_test\background.xml" />
     <None Include="Assets\Orthello\Standard Assets\OT\_Base\TintedAlpha.shader" />
     <None Include="Assets\GFX\character\player.xml" />
-    <Reference Include="TexturePacker">
-      <HintPath>Assets\Extensions\TexturePacker\Lib\TexturePacker.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{49BB564E-B74F-9750-FB21-AD9A9DE552A8}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
-    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{01BFE61C-4FF4-A673-1F2B-6B5C3830D912}</Project>
-      <Name>Assembly-UnityScript-firstpass</Name>
-    </ProjectReference>
+    <None Include="Assets\Production\gfx\zombie.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

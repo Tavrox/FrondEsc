@@ -22,7 +22,7 @@
         <key>dataFormat</key>
         <string>cocos2d</string>
         <key>textureFileName</key>
-        <filename>../../GFX/weapons/skill1.png</filename>
+        <filename>../../GFX/weapons/skill.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -111,7 +111,7 @@
             <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
         <key>dataFileName</key>
-        <filename>../../GFX/weapons/skill1.xml</filename>
+        <filename>../../GFX/weapons/skill.xml</filename>
         <key>multiPack</key>
         <false/>
         <key>mainExtension</key>
@@ -148,7 +148,11 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/GameDesign/FrondEscrim/GFX/skill1.png</filename>
+            <filename>axe.png</filename>
+            <filename>knife.png</filename>
+            <filename>axe_chooser.png</filename>
+            <filename>knife_chooser.png</filename>
+            <filename>09Shield.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

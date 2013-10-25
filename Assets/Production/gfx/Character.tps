@@ -148,13 +148,16 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>player-_0001_Run2.png</filename>
-            <filename>player-_0002_Run3.png</filename>
-            <filename>player-_0003_Falling.png</filename>
-            <filename>player-_0004_Cinematic.png</filename>
-            <filename>player-_0005_Skill1.png</filename>
-            <filename>player-_0006_Skill2.png</filename>
-            <filename>player-_0000_Run1.png</filename>
+            <filename>playerRun03.png</filename>
+            <filename>playerRun04.png</filename>
+            <filename>playerRun05.png</filename>
+            <filename>playerRun06.png</filename>
+            <filename>playerRun07.png</filename>
+            <filename>playerRun08.png</filename>
+            <filename>playerRun09.png</filename>
+            <filename>playerRun10.png</filename>
+            <filename>playerRun01.png</filename>
+            <filename>playerRun02.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

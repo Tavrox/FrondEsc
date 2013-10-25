@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4BEF05C3-74C8-D908-E2E5-1E9F233B6E54}</ProjectGuid>
+    <ProjectGuid>{25EA5FDB-DB2A-64E8-C854-130F67B2CCB9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
@@ -45,39 +45,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\Components\TPBaseAnimationEditor.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\Components\TPHelperEditor.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\Components\TPMeshAnimationEditor.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\Components\TPSpriteAnimationEditor.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\Components\TPSpriteEditor.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\Components\TPSpriteTextureEditor.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\Components\TPStaticSpriteEditor.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\Config\TexturePackerEditorConfig.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\Data\TPAssetPostprocessor.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\Data\TPEditorData.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\Menu\ComponentMenu.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\Menu\GameObjectMenu.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\Styles\TexturePackerStyles.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\TexturePackerEditor\TextureNodeRenderer.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\TexturePackerEditor\TexturePackerAtlasEditor.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\TexturePackerEditor\TexturePackerEditor.cs" />
-    <Compile Include="Assets\Extensions\TexturePacker\TPCore\Editor\TexturePackerEditor\TexturePackerMenuItem.cs" />
     <Compile Include="Assets\Orthello\Standard Assets\Editor\OTAssetPostProcessor.cs" />
     <Compile Include="Assets\Orthello\Standard Assets\Editor\OTPrefabBreaker.cs" />
     <None Include="Assets\Production\gfx\scenery.xml" />
     <None Include="Assets\GFX\scenery\scenery.xml" />
     <None Include="Assets\Production\gfx\background.xml" />
     <None Include="Assets\GFX\background\background.xml" />
+    <None Include="Assets\GFX\prod_test\skill.xml" />
+    <None Include="Assets\GFX\character\zombie.xml" />
     <None Include="Assets\Orthello\-Read-Me.txt" />
-    <None Include="Assets\Extensions\TexturePacker\Tutorial\Resources\example_data.txt" />
-    <None Include="Assets\Extensions\TexturePacker\Tutorial\Resources\TutorialAtlas_data.txt" />
+    <None Include="Assets\GFX\weapons\sk_bulls.xml" />
     <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
+    <None Include="Assets\GFX\weapons\skill.xml" />
     <None Include="Assets\Production\gfx\player.xml" />
+    <None Include="Assets\GFX\prod_test\scenery.xml" />
+    <None Include="Assets\GFX\prod_test\background.xml" />
     <None Include="Assets\Orthello\Standard Assets\OT\_Base\TintedAlpha.shader" />
     <None Include="Assets\GFX\character\player.xml" />
-    <Reference Include="TexturePacker">
-      <HintPath>Assets\Extensions\TexturePacker\Lib\TexturePacker.dll</HintPath>
-    </Reference>
+    <None Include="Assets\Production\gfx\zombie.xml" />
     <Reference Include="UnityEditor.Graphs">
       <HintPath>E:\Program Files (x86)\Unity\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
     </Reference>
@@ -98,16 +83,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{49BB564E-B74F-9750-FB21-AD9A9DE552A8}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
-    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{01BFE61C-4FF4-A673-1F2B-6B5C3830D912}</Project>
-      <Name>Assembly-UnityScript-firstpass</Name>
-    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{2E5E8461-2500-ACE5-52BB-B973AE1AB406}</Project>
+      <Project>{2CA5BE5F-7860-4F76-64A7-0D06BDD40B1B}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>

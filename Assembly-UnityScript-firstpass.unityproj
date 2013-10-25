@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{01BFE61C-4FF4-A673-1F2B-6B5C3830D912}</ProjectGuid>
+	<ProjectGuid>{671D7A12-8C47-D98A-F2B7-31D02AE41C1A}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -53,13 +53,17 @@
      <None Include="Assets\GFX\scenery\scenery.xml" />
      <None Include="Assets\Production\gfx\background.xml" />
      <None Include="Assets\GFX\background\background.xml" />
+     <None Include="Assets\GFX\character\zombie.xml" />
+     <None Include="Assets\GFX\weapons\skills.xml" />
      <None Include="Assets\Orthello\-Read-Me.txt" />
      <None Include="Assets\Extensions\TexturePacker\Tutorial\Resources\example_data.txt" />
+     <None Include="Assets\GFX\weapons\sk_bulls.xml" />
      <None Include="Assets\Extensions\TexturePacker\Tutorial\Resources\TutorialAtlas_data.txt" />
      <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Production\gfx\player.xml" />
      <None Include="Assets\Orthello\Standard Assets\OT\_Base\TintedAlpha.shader" />
      <None Include="Assets\GFX\character\player.xml" />
+     <None Include="Assets\Production\gfx\zombie.xml" />
  <Reference Include="TexturePacker">
  <HintPath>Assets\Extensions\TexturePacker\Lib\TexturePacker.dll</HintPath>
  </Reference>
