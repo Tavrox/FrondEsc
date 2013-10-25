@@ -345,10 +345,10 @@ public class OTView : MonoBehaviour
 			if (!camera.orthographic)
             	camera.orthographic = true;
 			CheckViewSize();
-			if (camera.near!=0)
-            	camera.near = 0;
-			if (camera.far!= cameraRange)				
-            	camera.far = cameraRange;				
+			if (camera.nearClipPlane!=0)
+            	camera.nearClipPlane = 0;
+			if (camera.farClipPlane!= cameraRange)				
+            	camera.farClipPlane = cameraRange;				
 			if (OT.world == OT.World.WorldSide2D)
 			{
 				cameraDepth = -1000;
