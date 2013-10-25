@@ -178,9 +178,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTeam: 0
-  HP: 0
-  res_phys: 0
-  res_mag: 0
+  HP: 100
+  res_phys: 30
+  res_mag: 20
   isShot: 0
   talking: 0
   isGoDown: 0
@@ -206,7 +206,6 @@ MonoBehaviour:
   spawnPos: {x: 0, y: 0, z: 0}
   thisTransform: {fileID: 0}
   rayDistUp: .375
-  ProjectilePrefab: {fileID: 100000, guid: f563cc493c998f94484286889966124f, type: 2}
   position: {x: 0, y: 0, z: 0}
   dialog: {fileID: 0}
   skill_knife: {fileID: 11400000, guid: 736b7b4e8ecf13249a7dd154367748bd, type: 2}

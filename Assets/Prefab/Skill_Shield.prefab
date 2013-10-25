@@ -38,7 +38,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee786f02d443ed40bca093690b33e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bull: {fileID: 0}
+  bull: {fileID: 11400002, guid: baedaaf699438cd41a38cf3edc01a732, type: 2}
+  skill_fb:
+    name: 
+    container: {fileID: 0}
+    startFrame: 0
+    endFrame: 0
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 1
+    playCount: 1
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 0
+    _containerName: 
   ID: 3
   cooldown: 10
   damages: 100

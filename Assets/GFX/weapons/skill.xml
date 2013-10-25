@@ -4,49 +4,10 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>09Shield.png</key>
+            <key>01_knife.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,1},{120,120}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{120,120}}</string>
-                <key>sourceSize</key>
-                <string>{120,120}</string>
-            </dict>
-            <key>axe.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{122,1},{40,60}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{40,60}}</string>
-                <key>sourceSize</key>
-                <string>{40,60}</string>
-            </dict>
-            <key>axe_chooser.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{1,122},{150,150}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{150,150}}</string>
-                <key>sourceSize</key>
-                <string>{150,150}</string>
-            </dict>
-            <key>knife.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{152,122},{64,16}}</string>
+                <string>{{1,1},{64,16}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -56,10 +17,62 @@
                 <key>sourceSize</key>
                 <string>{64,16}</string>
             </dict>
-            <key>knife_chooser.png</key>
+            <key>02_axe.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,273},{150,150}}</string>
+                <string>{{66,1},{40,60}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{40,60}}</string>
+                <key>sourceSize</key>
+                <string>{40,60}</string>
+            </dict>
+            <key>03_shield.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{107,1},{120,120}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{120,120}}</string>
+                <key>sourceSize</key>
+                <string>{120,120}</string>
+            </dict>
+            <key>04_knife_chooser.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{228,1},{150,150}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{150,150}}</string>
+                <key>sourceSize</key>
+                <string>{150,150}</string>
+            </dict>
+            <key>05_axe_chooser.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1,152},{150,150}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{150,150}}</string>
+                <key>sourceSize</key>
+                <string>{150,150}</string>
+            </dict>
+            <key>06_shield_chooser.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{152,152},{150,150}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -77,9 +90,9 @@
             <key>realTextureFileName</key>
             <string>skill.png</string>
             <key>size</key>
-            <string>{256,512}</string>
+            <string>{512,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:21531e6fcbbff612b24de09a1c9aafe0:1/1$</string>
+            <string>$TexturePacker:SmartUpdate:d9eee8b38d50ee3d2975baa31ecfd07d:1/1$</string>
             <key>textureFileName</key>
             <string>skill.png</string>
         </dict>

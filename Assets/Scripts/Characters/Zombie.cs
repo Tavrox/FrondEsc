@@ -42,13 +42,15 @@ public class Zombie : Enemy {
 		//System.Console.WriteLine("test");
 		movingDir = moving.None;
 		
+		Debug.Log(this.HP);
 		
-    //rotate to look at the player
-//    myTransform.rotation = Quaternion.Slerp(myTransform.rotation,
-//    Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed*Time.deltaTime);
-//     
-//    //move towards the player
-//    myTransform.position += myTransform.forward * movevectorMove * Time.deltaTime;
+	    //rotate to look at the player
+		//    myTransform.rotation = Quaternion.Slerp(myTransform.rotation,
+		//    Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed*Time.deltaTime);
+		//     
+		//    //move towards the player
+		//    myTransform.position += myTransform.forward * movevectorMove * Time.deltaTime;
+		
 		if(chasingPlayer) {
 			//Debug.Log("Px ="+target.position.x+" / Zx ="+myTransform.position.x);
 			if (target.position.x < thisTransform.position.x) {
@@ -83,7 +85,7 @@ public class Zombie : Enemy {
   		Debug.DrawRay(thisTransform.position, Vector3.left*blockDetectionArea);
 		Debug.DrawRay(thisTransform.position, Vector3.right*blockDetectionArea);
 		if (Physics.Raycast(detectBlockLeft, out hitInfo, blockDetectionArea) || Physics.Raycast(detectBlockRight, out hitInfo, blockDetectionArea)) {
-			if(hitInfo.collider.tag == "boxes") {
+			if(hitInfo.collider.tag == "Boxes") {
 				isJump = true;
 				UpdateMovement();
 				//Debug.Log("JUMP");
@@ -91,14 +93,17 @@ public class Zombie : Enemy {
 		}
     }
 	
-	void OnTriggerEnter(Collider other) {
+	void OnTriggerEnter(Collider other) 
+	{
+		print ("omg");
+		
 		if(other.gameObject.CompareTag("Player")) {
 			GameEventManager.TriggerGameOver();
 			//Debug.Log("Collide");
 			chasingPlayer = false;
 		}
-		if(other.gameObject.CompareTag("Projectile")) {
-			HP-=50;
+		if(other.gameObject.CompareTag("Bullets")) {
+			HP-= other.GetComponent<Bullets>().Skill.damages;
 			if(HP <= 0) {
 				//Debug.Log("HEADSHOT");
 				chasingPlayer = false;

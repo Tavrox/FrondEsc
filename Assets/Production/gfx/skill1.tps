@@ -148,11 +148,12 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>axe.png</filename>
-            <filename>knife.png</filename>
-            <filename>axe_chooser.png</filename>
-            <filename>knife_chooser.png</filename>
-            <filename>09Shield.png</filename>
+            <filename>03_shield.png</filename>
+            <filename>02_axe.png</filename>
+            <filename>04_knife_chooser.png</filename>
+            <filename>05_axe_chooser.png</filename>
+            <filename>01_knife.png</filename>
+            <filename>06_shield_chooser.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

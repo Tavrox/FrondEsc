@@ -78,7 +78,7 @@ public class Bullets : MonoBehaviour {
 		}
 	}
 	
-	bool Update ()
+	void Update ()
 	{
 		if (bullType == bullTopo.Magic || bullType == bullTopo.Physic)
 		{
@@ -104,28 +104,20 @@ public class Bullets : MonoBehaviour {
 					trans.position = new Vector3(trans.position.x + (BulletSpeed * 1), trans.position.y ,trans.position.z);
 					break;
 				}
-				default :
-				{
-					return false;
-				}
-			}
-			checkCollisionLevel();
-			if (Owner as Player)
-			{
-				checkPlayerHitOpp();
 			}
 		}
 		else if (bullType == bullTopo.Shield)
 		{
 			trans.position = new Vector3(Owner.transform.position.x, Owner.transform.position.y ,Owner.transform.position.z);
 		}
-		else if (Owner as Enemy)
-		{
-		
-		}
-		return true;
 	}
 	
+	void onTriggerEnter()
+	{
+		
+	}
+	
+	// OBSOLETE
 	bool checkCollisionLevel()
 	{
 		if (Physics.Raycast(trans.position, buildVectorBull(), out rayInfo, rayDist , platformMask) || Physics.Raycast(trans.position, buildVectorBull(), out rayInfo, rayDist , groundMask))
@@ -138,6 +130,8 @@ public class Bullets : MonoBehaviour {
 		else return false;
 	}
 	
+	
+	//OBSOLETE
 	bool checkPlayerHitOpp()
 	{
 		if (Physics.Raycast(trans.position, buildVectorBull(), out rayInfo, rayDist , enemiesMask))
@@ -146,6 +140,15 @@ public class Bullets : MonoBehaviour {
 			return true;
 		}
 		else return false;
+	}
+	
+	public void onTriggerEnter( Collider other)
+	{
+		if(other.gameObject.CompareTag("Platforms") || (other.gameObject.CompareTag("Ground")) || (other.gameObject.CompareTag("Enemy")))
+		{
+			
+		}
+		
 	}
 	
 	Vector3 buildVectorBull()

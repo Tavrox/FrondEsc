@@ -4,18 +4,18 @@
 TagManager:
   tags:
   - 
-  - Enemies
+  - Enemy
   - Bullets
   - Weapons
   - Skills
-  - 
-  - 
-  - 
-  - 
-  - 
-  - Projectile
-  - boxes
+  - Boxes
   - Zombie
+  - Platforms
+  - Ground
+  - 
+  - 
+  - 
+  - 
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

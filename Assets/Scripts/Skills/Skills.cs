@@ -7,12 +7,12 @@ public class Skills : MonoBehaviour {
 	
 	
 	public Bullets bull;
-	// public SkillFB skill_fb;
+	public OTAnimationFrameset skill_fb;
 	
 	public int ID;
 	public float cooldown;
 	public Input selec;
-	public float damages;
+	public int damages;
 	
 	public enum SkillList {Knife, Axe, Shield};
 	public SkillList SkillNames;

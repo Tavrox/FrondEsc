@@ -1,0 +1,24 @@
+<as:CAM
+ xmlns:as="http://www.oasis-open.org/committees/cam"
+ xmlns:camed="http://jcam.org.uk/editor"
+ xmlns:xml="http://www.w3.org/XML/1998/namespace"
+ xmlns:xs="http://www.w3.org/2001/XMLSchema" CAMlevel="1" version="1.1" cameditor="3.0.1">
+  <as:Header>
+    <as:Description>No Description</as:Description>
+    <as:Owner>Not Set</as:Owner>
+    <as:Version>0.1</as:Version>
+    <as:DateTime>2013-10-25T15:43:36</as:DateTime>
+  </as:Header>
+  <as:AssemblyStructure>
+    <as:Structure ID="NewFile" taxonomy="XML" reference="">
+      <Project>%%</Project>
+    </as:Structure>
+  </as:AssemblyStructure>
+  <as:BusinessUseContext>
+    <as:Rules>
+      <as:default>
+        <as:context />
+      </as:default>
+    </as:Rules>
+  </as:BusinessUseContext>
+</as:CAM>

@@ -38,10 +38,10 @@
     <Reference Include="System.XML" />
     <Reference Include="System.Core" />
     <Reference Include="UnityEngine">
-      <HintPath>D:/Unity/Unity/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>E:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>D:/Unity/Unity/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>E:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -140,7 +140,6 @@
     <Compile Include="Assets\Scripts\Managers\GameEventManager.cs" />
     <Compile Include="Assets\Scripts\ParaOpen.cs" />
     <Compile Include="Assets\Scripts\Skills\Bullets.cs" />
-    <Compile Include="Assets\Scripts\Skills\Projectile.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills.cs" />
     <Compile Include="Assets\iTween\Plugins\iTween.cs" />
     <Compile Include="Assets\iTween\Sample\MoveSample.cs" />

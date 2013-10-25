@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Player : Character {
 	
-	public GameObject ProjectilePrefab;
 	[HideInInspector] public Vector3 position;
 	
 	[HideInInspector] public Dialog dialog;
@@ -74,17 +73,6 @@ public class Player : Character {
 		{
 			isShot = true;
 		}
-		if(Input.GetKeyDown(KeyCode.AltGr))
-		{
-			//Debug.Log(isLeft);
-			//Fire projectile
-//			if(isLeft) {position = new Vector3(transform.position.x - (transform.localScale.x / 2), transform.position.y);}
-//			else if(isRight) {position = new Vector3(transform.position.x + (transform.localScale.x / 2), transform.position.y); }
-			position = new Vector3(transform.position.x,transform.position.y);
-			Instantiate(ProjectilePrefab, position, Quaternion.identity);
-			//skillLaunch = new Skill(1, "phys", 50, 3);
-		}
-		
 		if (Input.GetKeyDown(KeyCode.Alpha1))
 		{
 			skill_knife.useSkill(Skills.SkillList.Knife);
