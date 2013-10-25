@@ -1,7 +1,10 @@
 Library/*
 Temp/*
+Library
+Temp
 Library/
 Temp/
+Library/assetDatabase3
 *.pidb
 *.csproj
 *.unityproj
