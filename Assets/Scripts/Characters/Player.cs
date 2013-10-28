@@ -12,6 +12,7 @@ public class Player : Character {
 	public Skills skill_axe;
 	public Skills skill_shield;
 	
+	
 	// Use this for initialization
 	public override void Start () 
 	{
@@ -20,9 +21,7 @@ public class Player : Character {
 		GameEventManager.GameStart += GameStart;
 		GameEventManager.GameOver += GameOver;
 		enabled = false;
-		
-		HP = 200;
-		
+		hasShield = false;
 		spawnPos = thisTransform.position;
 		//dialog = GameObject.Find("Dialog").GetComponent<Dialog>();
 	}
@@ -30,7 +29,7 @@ public class Player : Character {
 	// Update is called once per frame
 	public void Update () 
 	{
-//		if(null) FindObjectOfType(typeof(Player));
+		print ("Player shield " + hasShield);
 		
 		// these are false unless one of keys is pressed
 		isLeft = false;
@@ -81,11 +80,10 @@ public class Player : Character {
 		{
 			skill_axe.useSkill(Skills.SkillList.Axe);
 		}
-		if (Input.GetKeyDown(KeyCode.Alpha2))
+		if (Input.GetKeyDown(KeyCode.Alpha3))
 		{
-			skill_axe.useSkill(Skills.SkillList.Shield);
+			skill_shield.useSkill(Skills.SkillList.Shield);
 		}
-			
 		UpdateMovement();
 	}
 	

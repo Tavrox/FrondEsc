@@ -10,9 +10,9 @@ GameObject:
   - 4: {fileID: 400000}
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
-  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
-  m_Name: Bullets-3
+  m_Name: pop1sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,9 +25,9 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 400002}
+  - 4: {fileID: 400004}
   m_Layer: 0
-  m_Name: SpriteParent
+  m_Name: Sprite Parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,12 +40,16 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 400004}
-  - 114: {fileID: 11400002}
+  - 4: {fileID: 400002}
+  - 33: {fileID: 3300002}
   - 65: {fileID: 6500000}
+  - 23: {fileID: 2300002}
+  - 54: {fileID: 5400000}
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400004}
   m_Layer: 0
-  m_Name: Bullets_Shield
-  m_TagString: Bullets
+  m_Name: Player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,23 +61,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.53668594, y: -1.33339334, z: -.00158706191}
-  m_LocalScale: {x: 2, y: 2, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400002}
---- !u!4 &400002
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 400000}
+  m_Children: []
   m_Father: {fileID: 400004}
---- !u!4 &400004
+--- !u!4 &400002
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -83,8 +75,20 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 400002}
+  - {fileID: 400004}
   m_Father: {fileID: 0}
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400000}
+  m_Father: {fileID: 400002}
 --- !u!23 &2300000
 Renderer:
   m_ObjectHideFlags: 1
@@ -103,6 +107,24 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
+--- !u!23 &2300002
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
 --- !u!33 &3300000
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -110,6 +132,28 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Mesh: {fileID: 0}
+--- !u!33 &3300002
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &5400000
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 120
+  m_CollisionDetection: 0
 --- !u!65 &6500000
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -120,9 +164,55 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: .639999986, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ee8be1c7bb65c4782cd4f0d5e515d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTeam: 0
+  HP: 100
+  res_phys: 30
+  res_mag: 20
+  isShot: 0
+  talking: 0
+  isGoDown: 0
+  isCrounch: 0
+  isLookup: 0
+  shootLeft: 0
+  facingDir: 0
+  movingDir: 0
+  isLeft: 0
+  isRight: 0
+  isJump: 0
+  isPass: 0
+  jumping: 0
+  grounded: 0
+  passingPlatform: 0
+  onPlatform: 0
+  blockedRight: 0
+  blockedLeft: 0
+  blockedUp: 0
+  blockedDown: 0
+  alive: 1
+  spawnPos: {x: 0, y: 0, z: 0}
+  hasShield: 1
+  shieldDef: 100
+  thisTransform: {fileID: 0}
+  rayDistUp: .375
+  position: {x: 0, y: 0, z: 0}
+  dialog: {fileID: 0}
+  skill_knife: {fileID: 11400000, guid: 736b7b4e8ecf13249a7dd154367748bd, type: 2}
+  skill_axe: {fileID: 11400000, guid: d41fba480116c4942b92a98ac70108cb, type: 2}
+  skill_shield: {fileID: 11400000, guid: 24854b585565b97419e637cdeb7c74b2, type: 2}
+--- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -133,14 +223,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e0774980171c514ea93208b47048a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Bullets-3
-  _position: {x: 2.53668594, y: -1.33339334}
-  _size: {x: 2, y: 2}
+  _name: pop1sprite
+  _position: {x: 0, y: 0}
+  _size: {x: 1, y: 1}
   _rotation: 0
   _pivot: 4
   _pivotPoint: {x: 0, y: 0}
   _registerInput: 0
-  _depth: 0
+  _depth: -1
   _collidable: 0
   _physics: 0
   _colliderType: 0
@@ -156,9 +246,9 @@ MonoBehaviour:
     width: 0
     height: 0
   protoType: 
-  baseName: Bullets
-  oSize: {x: 2.5, y: 2.5}
-  imageSize: {x: 2, y: 2}
+  baseName: pop1sprite
+  oSize: {x: 1.66666675, y: 2.08333349}
+  imageSize: {x: 1, y: 1}
   _offset: {x: 0, y: 0}
   _baseOffset: {x: 0, y: 0}
   _flipHorizontal: 0
@@ -170,22 +260,22 @@ MonoBehaviour:
   _alpha: 1
   _image: {fileID: 0}
   sizeImages: []
-  _frameIndex: 2
-  _frameName: 03_shield
+  _frameIndex: 0
+  _frameName: playerRun01
   _spriteContainer: {fileID: 0}
-  _containerName: Skill
+  _containerName: Player
   _newSprite: 0
   _animation: {fileID: 0}
-  _animationFrameset: Shield
+  _animationFrameset: 
   _speed: 1
-  _looping: 0
+  _looping: 1
   _numberOfPlays: -1
   _playOnStart: 0
   _startAtRandomFrame: 0
-  _destroyWhenFinished: 1
+  _destroyWhenFinished: 0
   animationPreview: 0
-  _animationName: SkillAnims
---- !u!114 &11400002
+  _animationName: PlayerAnims
+--- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -193,15 +283,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100004}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce032f1a2a02a6a4aa6fe43758fcd770, type: 3}
+  m_Script: {fileID: 11500000, guid: f970ca3c112feeb4f90e8e3d7a9097f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Skill: {fileID: 11400000, guid: 24854b585565b97419e637cdeb7c74b2, type: 2}
-  Owner: {fileID: 11400000, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
-  ID: 2
-  BulletSpeed: .100000001
-  stackSize: 0
-  bullType: 2
+  spriteParent: {fileID: 400004}
+  playerSprite: {fileID: 11400002}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -95,16 +95,24 @@ public class Zombie : Enemy {
 	
 	void OnTriggerEnter(Collider other) 
 	{
-		print ("omg");
-		
-		if(other.gameObject.CompareTag("Player")) {
-			GameEventManager.TriggerGameOver();
-			//Debug.Log("Collide");
-			chasingPlayer = false;
+		if(other.gameObject.CompareTag("Player")) 
+		{
+			Character ch = other.GetComponent<Character>();
+			if (ch.hasShield == false)
+			{
+				GameEventManager.TriggerGameOver();
+				chasingPlayer = false;
+			}
 		}
-		if(other.gameObject.CompareTag("Bullets")) {
-			HP-= other.GetComponent<Bullets>().Skill.damages;
-			if(HP <= 0) {
+		if(other.gameObject.CompareTag("Bullets")) 
+		{
+			Bullets bull = other.GetComponent<Bullets>();
+			if (bull.bullType != Bullets.bullTopo.Shield)
+			{
+				HP-= bull.Skill.damages;
+			}
+			if(HP <= 0) 
+			{
 				//Debug.Log("HEADSHOT");
 				chasingPlayer = false;
 				Destroy(gameObject);

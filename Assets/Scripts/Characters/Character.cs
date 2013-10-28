@@ -39,9 +39,11 @@ public class Character : MonoBehaviour
 	[HideInInspector] public bool blockedUp;
 	[HideInInspector] public bool blockedDown;
 	
-	[HideInInspector] public bool isScoring;
 	[HideInInspector] public bool alive = true;
 	[HideInInspector] public Vector3 spawnPos;
+	
+	[HideInInspector] public bool hasShield = false; 
+	[HideInInspector] public int shieldDef; 
 	
 	[HideInInspector] public Transform thisTransform;
 	

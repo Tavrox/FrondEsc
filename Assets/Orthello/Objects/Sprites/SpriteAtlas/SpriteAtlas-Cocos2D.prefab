@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: SpriteAtlas-Cocos2D
-  m_TagString: Bullets
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd220758bd0b8b4685199267909af83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: skill1_bullet
+  _name: 
   _sheetSize: {x: 64, y: 16}
   texture: {fileID: 2800000, guid: e571a74d8a9da8c4094d83d841b75be8, type: 3}
   sizeTextures: []

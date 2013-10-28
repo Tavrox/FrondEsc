@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Skill_Axe
+  m_Name: Skill_Shield
   m_TagString: Skills
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38,7 +38,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee786f02d443ed40bca093690b33e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bull: {fileID: 11400002, guid: 1f39ecc3d55493245b9540b0cf688195, type: 2}
+  bull: {fileID: 11400002, guid: baedaaf699438cd41a38cf3edc01a732, type: 2}
+  Owner: {fileID: 11400000, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
   skill_fb:
     name: 
     container: {fileID: 0}
@@ -52,10 +53,10 @@ MonoBehaviour:
     singleDuration: 0
     startIndex: 0
     _containerName: 
-  ID: 2
-  cooldown: 5
-  damages: 50
-  SkillNames: 1
+  ID: 3
+  cooldown: 10
+  damages: 100
+  SkillNames: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

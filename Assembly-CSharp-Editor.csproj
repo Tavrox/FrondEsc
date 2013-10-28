@@ -49,6 +49,7 @@
     <Compile Include="Assets\Orthello\Standard Assets\Editor\OTPrefabBreaker.cs" />
     <None Include="Assets\Production\gfx\scenery.xml" />
     <None Include="Assets\GFX\scenery\scenery.xml" />
+    <None Include="Assets\GFX\menus\main_menu.xml" />
     <None Include="Assets\Production\gfx\background.xml" />
     <None Include="Assets\GFX\background\background.xml" />
     <None Include="Assets\GFX\prod_test\skill.xml" />

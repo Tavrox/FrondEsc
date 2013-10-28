@@ -138,6 +138,8 @@
     <Compile Include="Assets\Scripts\LevelDoor.cs" />
     <Compile Include="Assets\Scripts\Managers\GUIManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameEventManager.cs" />
+    <Compile Include="Assets\Scripts\Menus\Entry.cs" />
+    <Compile Include="Assets\Scripts\Menus\MenuButton.cs" />
     <Compile Include="Assets\Scripts\ParaOpen.cs" />
     <Compile Include="Assets\Scripts\Skills\Bullets.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills.cs" />
@@ -147,6 +149,7 @@
     <Compile Include="Assets\iTween\Sample\SampleInfo.cs" />
     <None Include="Assets\Production\gfx\scenery.xml" />
     <None Include="Assets\GFX\scenery\scenery.xml" />
+    <None Include="Assets\GFX\menus\main_menu.xml" />
     <None Include="Assets\Production\gfx\background.xml" />
     <None Include="Assets\GFX\background\background.xml" />
     <None Include="Assets\GFX\prod_test\skill.xml" />

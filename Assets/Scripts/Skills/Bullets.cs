@@ -33,7 +33,6 @@ public class Bullets : MonoBehaviour {
 		trans = transform;
 		Owner = GameObject.Find("Player").GetComponent<Player>();
 		trans.position = new Vector3(Owner.transform.position.x, Owner.transform.position.y, Owner.transform.position.z);
-		
 		switch (Owner.facingDir)
 		{
 			case (Character.facing.Left) :
@@ -68,7 +67,7 @@ public class Bullets : MonoBehaviour {
 			}
 			case (bullDir.Left) :
 			{
-				trans.localScale = new Vector3( -1, 1, 1);
+				invertSprite(trans);
 				break;
 			}
 			case (bullDir.Right) :
@@ -108,6 +107,10 @@ public class Bullets : MonoBehaviour {
 		}
 		else if (bullType == bullTopo.Shield)
 		{
+			if (Owner.facingDir == Character.facing.Left)
+			{
+				invertSprite(trans);
+			}
 			trans.position = new Vector3(Owner.transform.position.x, Owner.transform.position.y ,Owner.transform.position.z);
 		}
 	}
@@ -149,6 +152,11 @@ public class Bullets : MonoBehaviour {
 			
 		}
 		
+	}
+	
+	void invertSprite(Transform spr)
+	{
+		spr.localScale = new Vector3( -1, 1, 1);
 	}
 	
 	Vector3 buildVectorBull()

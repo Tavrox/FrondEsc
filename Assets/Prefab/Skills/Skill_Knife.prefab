@@ -39,6 +39,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bull: {fileID: 11400002, guid: dfdef1026b75095479b458266f54e48d, type: 2}
+  Owner: {fileID: 11400000, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
   skill_fb:
     name: 
     container: {fileID: 0}

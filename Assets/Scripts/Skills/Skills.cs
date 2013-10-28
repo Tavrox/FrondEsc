@@ -5,8 +5,8 @@ public class Skills : MonoBehaviour {
 
 	protected Transform trans;
 	
-	
 	public Bullets bull;
+	public Character Owner;
 	public OTAnimationFrameset skill_fb;
 	
 	public int ID;
@@ -43,9 +43,11 @@ public class Skills : MonoBehaviour {
 			launchBullets(sk);
 			feedbackSkill(sk);
 		}
-		else if (sk == SkillList.Shield) {
+		else if (sk == SkillList.Shield) 
+		{
 			launchShield(sk);
 			feedbackSkill(sk);
+			print (sk);
 		}
 	}
 	
@@ -59,6 +61,8 @@ public class Skills : MonoBehaviour {
 	void launchShield(SkillList sk)
 	{
 		Instantiate(bull, new Vector3(0,0,0), Quaternion.identity);
+		Owner.hasShield = true;
+		Owner.shieldDef = damages;
 	}
 	
 	public void feedbackSkill(SkillList sk)
