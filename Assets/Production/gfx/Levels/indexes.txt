@@ -1,0 +1,8 @@
+_STRUCTURE DES ID_
+
+ZZZZ > ID
+XYXX > Les deux int après le Y vont servir à faire des 
+variations/animations d'un sprite. On dispose donc de 99 int pour faire des
+variations.
+Par exemple, si on a 0100 en Crate
+et 0200 en Leviers, les deux 0 après le 1 de crate permettent de ne pas tout décaler.
