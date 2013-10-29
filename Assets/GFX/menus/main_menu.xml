@@ -4,10 +4,36 @@
     <dict>
         <key>frames</key>
         <dict>
+            <key>logo_fe.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1,1},{400,200}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{400,200}}</string>
+                <key>sourceSize</key>
+                <string>{400,200}</string>
+            </dict>
             <key>menu_bg.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,1},{800,600}}</string>
+                <string>{{1,202},{800,600}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{800,600}}</string>
+                <key>sourceSize</key>
+                <string>{800,600}</string>
+            </dict>
+            <key>pause.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1,803},{800,600}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -20,7 +46,7 @@
             <key>scalingBtn.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,602},{300,100}}</string>
+                <string>{{1,1404},{300,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -38,9 +64,9 @@
             <key>realTextureFileName</key>
             <string>main_menu.png</string>
             <key>size</key>
-            <string>{1024,1024}</string>
+            <string>{1024,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:7f7dce06e3a86a236aa50924a0c0ea71:1/1$</string>
+            <string>$TexturePacker:SmartUpdate:34784d81623c7e8550095eb90fe03268:1/1$</string>
             <key>textureFileName</key>
             <string>main_menu.png</string>
         </dict>

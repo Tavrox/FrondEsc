@@ -3,10 +3,20 @@ using System.Collections;
 
 public class MenuButton : MonoBehaviour {
 	
-	public GUI ui;
-
+	public OTTextSprite label;
+	public OTAnimatingSprite sprite;
+	public enum ListAction
+	{
+		LaunchScene,
+		MuteSound,
+		LowerSound,
+		RaiseSound,
+		FunStuff, // To do funny miscellaneous stuff in menus :)
+	}
+	public ListAction action;
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 
 	}
 	
@@ -15,13 +25,12 @@ public class MenuButton : MonoBehaviour {
 	{
 		
 	}
-	
-	void onGUI()
-	{
-		
-	}
 	void OnMouseOver()
 	{
 		Debug.Log("Hover");	
+		if(Input.GetMouseButtonDown(0))
+		{
+			Application.LoadLevel(Entry.lvlName1);
+		}
 	}
 }
