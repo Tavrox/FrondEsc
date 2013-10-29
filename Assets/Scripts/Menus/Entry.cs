@@ -9,7 +9,7 @@ public class Entry : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-
+		
 	}
 	
 	// Update is called once per frame
@@ -19,9 +19,6 @@ public class Entry : MonoBehaviour {
 	}
 	void OnGUI()
 	{
-		if (GUI.Button( new Rect( 100, 100, 200, 100), "Hola!"))
-		{
-			print ("Button Clicked");
-		}	
+		
 	}
 }

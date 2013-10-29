@@ -13,12 +13,15 @@ public class MenuButton : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		Input.GetMouseButtonDown(1);
+		
 	}
 	
 	void onGUI()
 	{
 		
 	}
-
+	void OnMouseOver()
+	{
+		Debug.Log("Hover");	
+	}
 }

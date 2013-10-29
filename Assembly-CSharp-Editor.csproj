@@ -48,6 +48,7 @@
     <Compile Include="Assets\Orthello\Standard Assets\Editor\OTAssetPostProcessor.cs" />
     <Compile Include="Assets\Orthello\Standard Assets\Editor\OTPrefabBreaker.cs" />
     <None Include="Assets\Production\gfx\scenery.xml" />
+    <None Include="Assets\GFX\fonts\CPMono_82b_white.txt" />
     <None Include="Assets\GFX\scenery\scenery.xml" />
     <None Include="Assets\GFX\menus\main_menu.xml" />
     <None Include="Assets\Production\gfx\background.xml" />
@@ -57,6 +58,7 @@
     <None Include="Assets\Orthello\-Read-Me.txt" />
     <None Include="Assets\GFX\weapons\sk_bulls.xml" />
     <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
+    <None Include="Assets\GFX\fonts\CPMono_82b_border_white.fnt" />
     <None Include="Assets\GFX\weapons\skill.xml" />
     <None Include="Assets\Production\gfx\player.xml" />
     <None Include="Assets\GFX\prod_test\scenery.xml" />
