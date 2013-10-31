@@ -45,6 +45,7 @@ public class Zombie : Enemy {
 		isLeft = false;
 		isRight = false;
 		isJump = false;
+		isShot = false;
 		isPass = false;
 		movingDir = moving.None;
 		facingDir = facing.Left;
@@ -99,6 +100,7 @@ public class Zombie : Enemy {
 			Bullets bull = other.GetComponent<Bullets>();
 			if (bull.bullType != Bullets.bullTopo.Shield)
 			{
+				isShot = true;
 				HP-= bull.Skill.damages;
 			}
 			if(HP <= 0) 

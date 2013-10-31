@@ -74,8 +74,7 @@ public class Skills : MonoBehaviour {
 	{
 		if (sk == SkillList.Knife)
 		{
-			MasterAudio.GrabBusByName("LOLILOL");
-			MasterAudio.PlaySound("LOLILOL");
+			
 		}
 		else if (sk == SkillList.Axe)
 		{
