@@ -1,7 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Background : MonoBehaviour {
+public class LevelManager : MonoBehaviour {
+	
+	public OTSprite background;
+	public int ID;
+	public int nextLvlID;
+	public int previousLvlID;
 
 	// Use this for initialization
 	void Start () {

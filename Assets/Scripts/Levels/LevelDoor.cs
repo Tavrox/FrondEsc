@@ -4,6 +4,7 @@ using System.Collections;
 public class LevelDoor : MonoBehaviour {
 	
 	public enum doorType { BeginLevel, EndLevel }
+	public LevelManager lvlManager;
 	public doorType myDoorType;
 	
 	// Use this for initialization
@@ -16,17 +17,19 @@ public class LevelDoor : MonoBehaviour {
 //	}
 	void OnTriggerEnter(Collider other)
     {
-		if(other.gameObject.CompareTag("Player")) {
-			if(myDoorType.ToString()=="BeginLevectorMove") GameEventManager.TriggerPreviousLevel();
+		if(other.gameObject.CompareTag("Player")) 
+		{	
+			if(myDoorType.ToString()=="BeginLevel") GameEventManager.TriggerPreviousLevel();
 			else GameEventManager.TriggerNextLevel();
 		}
     }
 	
-	private void NextLevel () {print(Application.loadedLevel);
-		Application.LoadLevel(Application.loadedLevel+1);
+	private void NextLevel ()
+	{
+		Application.LoadLevel(lvlManager.nextLvlID);
 	}
 	
 	private void PreviousLevel () {
-		Application.LoadLevel(Application.loadedLevel-1);
+		Application.LoadLevel(lvlManager.previousLvlID);
 	}
 }

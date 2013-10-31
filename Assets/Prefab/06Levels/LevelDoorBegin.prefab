@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3c62cafbaeea834f8f47ac4d0d7d583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lvlManager: {fileID: 0}
   myDoorType: 0
 --- !u!1001 &100100000
 Prefab:
