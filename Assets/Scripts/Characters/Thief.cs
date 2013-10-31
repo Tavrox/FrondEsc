@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Zombie : Enemy {
+public class Thief : Enemy {
 	private Transform target; //the enemy's target
+	private Player player;
    // public float movevectorMove = 1f; //move speed
   //  public int rotationSpeed = 3; //speed of turning
 	private bool chasingPlayer;
@@ -12,11 +13,15 @@ public class Zombie : Enemy {
 	public float blockDetectionArea = 1;
     
 	private RaycastHit hitInfo; //infos de collision
-	private Ray detectTargetLeft, detectTargetRight, detectBlockLeft, detectBlockRight; //point de départ, direction
+	private Ray detectTargetLeft, detectTargetRight, detectBlockLeft, detectBlockRight, endPlatformLeft, endPlatformRight; //point de départ, direction
 	
 	private bool go = true;
+	private bool follow, follow2;
 	private int waypointId = 0;
 	public Transform[] waypoints;
+	
+	
+	private bool endOfPlatform = true;
     
     public override void Start () 
 	{
@@ -29,10 +34,11 @@ public class Zombie : Enemy {
 		HP = 150;
 		res_mag = 50;
 		res_phys = 10;
-		runSpeed = 0.5f;
+		runSpeed = 1f;
 		
 		spawnPos = thisTransform.position;
     	target = GameObject.FindWithTag("Player").transform; //target the player
+		player = GameObject.FindWithTag("Player").GetComponent<Player>();
     }
      
     void Update () {
@@ -44,7 +50,6 @@ public class Zombie : Enemy {
 		isPass = false;
 		//System.Console.WriteLine("test");
 		movingDir = moving.None;
-			facingDir = facing.Left;
 		
 		Debug.Log(this.HP);
 		
@@ -56,7 +61,7 @@ public class Zombie : Enemy {
 		//    myTransform.position += myTransform.forward * movevectorMove * Time.deltaTime;
 		
 		if(chasingPlayer) {ChasePlayer();UpdateMovement();}
-		else {Patrol();UpdateMovement();}
+		//else {Patrol();UpdateMovement();}
 		//myTransform.position = Vector3.Lerp(myTransform.position, target.position, movevectorMove * Time.deltaTime);
     
 		detectTargetLeft = new Ray(thisTransform.position, Vector3.left);
@@ -82,6 +87,52 @@ public class Zombie : Enemy {
 				//Debug.Log("JUMP");
 			}
 		}
+		
+		
+		Debug.DrawRay(new Vector3 (thisTransform.position.x+(thisTransform.localScale.x/4), thisTransform.position.y, thisTransform.position.z), Vector3.down*0.7f);
+		Debug.DrawRay(new Vector3 (thisTransform.position.x-(thisTransform.localScale.x/4), thisTransform.position.y, thisTransform.position.z), Vector3.down*0.7f);
+		
+		//if(Mathf.Abs(target.position.x-thisTransform.position.x) > 3)	follow = true;
+		
+		if(target.position.x < thisTransform.position.x)
+		{
+			//endOfPlatform = false;
+			isLeft = true;
+			facingDir = facing.Left;//UpdateMovement();
+			
+			if(Mathf.Abs(target.position.x-thisTransform.position.x) > 3) { follow = true; }
+			else follow = false;
+			endPlatformLeft = new Ray(new Vector3 (thisTransform.position.x+(thisTransform.localScale.x/4), thisTransform.position.y, thisTransform.position.z), Vector3.down);
+			if (Physics.Raycast(endPlatformLeft, out hitInfo,0.7f)) {
+				if (hitInfo.collider.tag == null) {
+					isLeft = false;/*follow2 = false; */
+					endOfPlatform = true;
+				}
+				else {
+					if(follow) {UpdateMovement();/*follow2=true;*/}
+				}
+			}
+		}
+		else if (target.position.x >= thisTransform.position.x) {
+			//endOfPlatform = false;
+			isRight = true; 
+			facingDir = facing.Right;
+			
+			if(Mathf.Abs(target.position.x-thisTransform.position.x) > 3) { follow = true; }
+			else follow = false;
+			endPlatformRight = new Ray(new Vector3 (thisTransform.position.x-(thisTransform.localScale.x/4), thisTransform.position.y, thisTransform.position.z), Vector3.down);
+			if (Physics.Raycast(endPlatformRight, out hitInfo,0.7f)) {
+				if (hitInfo.collider.tag == null) {
+					isRight = false;/*follow2 = false; */
+					endOfPlatform = true;
+				}
+				else {
+					if(follow) {UpdateMovement();/*follow2=true;*/}	
+				}
+			}
+		}
+			//if(!follow && follow2) UpdateMovement();
+		//if(!endOfPlatform) UpdateMovement();
     }
 	
 	void OnTriggerEnter(Collider other) 
@@ -155,7 +206,7 @@ public class Zombie : Enemy {
 		//myTransform.Translate(direction * movevectorMove * Time.deltaTime);
 	}
 	private void GameStart () {
-		if(FindObjectOfType(typeof(Zombie)) && this != null) {
+		if(FindObjectOfType(typeof(Thief)) && this != null) {
 			transform.localPosition = spawnPos;
 			enabled = true;
 		}
