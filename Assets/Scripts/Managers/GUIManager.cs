@@ -4,6 +4,7 @@ using System.Collections;
 public class GUIManager : MonoBehaviour {
 	
 	public GUIText gameOverText, instructionsText;
+	public GUIText HPTxt;
 	
 	// Use this for initialization
 	void Start () {

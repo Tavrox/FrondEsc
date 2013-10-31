@@ -36,17 +36,18 @@ public class Skills : MonoBehaviour {
 		if (sk == SkillList.Knife)
 		{
 			launchBullets(sk);
-			feedbackSkill(sk);
+			gfxFb(sk);
+			sfxFB(sk);
 		}
 		else if (sk == SkillList.Axe)
 		{
 			launchBullets(sk);
-			feedbackSkill(sk);
+			gfxFb(sk);
 		}
 		else if (sk == SkillList.Shield) 
 		{
 			launchShield(sk);
-			feedbackSkill(sk);
+			gfxFb(sk);
 			print (sk);
 		}
 	}
@@ -65,8 +66,23 @@ public class Skills : MonoBehaviour {
 		Owner.shieldDef = damages;
 	}
 	
-	public void feedbackSkill(SkillList sk)
+	public void gfxFb(SkillList sk)
 	{
 	// Instantiate( skill_fb, new Vector3(0,0,0), Quaternion.identity);
+	}
+	void sfxFB(SkillList sk)
+	{
+		if (sk == SkillList.Knife)
+		{
+			MasterAudio.PlaySound("Player_knife_1");
+		}
+		else if (sk == SkillList.Axe)
+		{
+			
+		}
+		else if (sk == SkillList.Shield) 
+		{
+			
+		}
 	}
 }

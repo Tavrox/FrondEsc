@@ -11,6 +11,10 @@ public class Player : Character {
 	public Skills skill_knife;
 	public Skills skill_axe;
 	public Skills skill_shield;
+	public OTSprite menu;
+	
+	private bool paused = false;
+	private float pauseTime;
 	
 	
 	// Use this for initialization
@@ -40,49 +44,63 @@ public class Player : Character {
 		//System.Console.WriteLine("test");
 		movingDir = moving.None;
 		
-		// keyboard input
-		if(Input.GetKey("left")) 
-		{ 
-			//Debug.Log("left");
-			isLeft = true;
-			shootLeft = true;
-			facingDir = facing.Left;
-		}
-		if (Input.GetKey("right") && isLeft == false) 
-		{ 
-			isRight = true; 
-			facingDir = facing.Right;
-			shootLeft = false;
-		}
-		if (Input.GetKey(KeyCode.DownArrow))
+		if (paused != true)
 		{
-			isGoDown = true;
-			facingDir = facing.Down;
+			// keyboard input
+			if(Input.GetKey("left")) 
+			{ 
+				//Debug.Log("left");
+				isLeft = true;
+				shootLeft = true;
+				facingDir = facing.Left;
+			}
+			if (Input.GetKey("right") && isLeft == false) 
+			{ 
+				isRight = true; 
+				facingDir = facing.Right;
+				shootLeft = false;
+			}
+			if (Input.GetKey(KeyCode.DownArrow))
+			{
+				isGoDown = true;
+				facingDir = facing.Down;
+			}
+			if (Input.GetKeyDown("up")) 
+			{ 
+				isJump = true; 
+			}
+			
+			if(Input.GetKeyDown("space"))
+			{
+				isPass = true;
+			}
+			if(Input.GetKeyDown(KeyCode.A))
+			{
+				isShot = true;
+			}
+			if (Input.GetKeyDown(KeyCode.Alpha1))
+			{
+				skill_knife.useSkill(Skills.SkillList.Knife);
+			}
+			if (Input.GetKeyDown(KeyCode.Alpha2))
+			{
+				skill_axe.useSkill(Skills.SkillList.Axe);
+			}
+			if (Input.GetKeyDown(KeyCode.Alpha3))
+			{
+				skill_shield.useSkill(Skills.SkillList.Shield);
+			}
 		}
-		if (Input.GetKeyDown("up")) 
-		{ 
-			isJump = true; 
-		}
-		
-		if(Input.GetKeyDown("space"))
+		if (Input.GetKeyDown(KeyCode.Escape))
 		{
-			isPass = true;
-		}
-		if(Input.GetKeyDown(KeyCode.A))
-		{
-			isShot = true;
-		}
-		if (Input.GetKeyDown(KeyCode.Alpha1))
-		{
-			skill_knife.useSkill(Skills.SkillList.Knife);
-		}
-		if (Input.GetKeyDown(KeyCode.Alpha2))
-		{
-			skill_axe.useSkill(Skills.SkillList.Axe);
-		}
-		if (Input.GetKeyDown(KeyCode.Alpha3))
-		{
-			skill_shield.useSkill(Skills.SkillList.Shield);
+			if (paused == true)
+			{
+				resumePause();	
+			}
+			else if (paused == false)
+			{
+				triggerPause();	
+			}
 		}
 		UpdateMovement();
 	}
@@ -94,12 +112,28 @@ public class Player : Character {
 		}
 	}
 	
-	private void GameOver () {
+	private void GameOver () 
+	{
 		enabled = false;
 		isLeft = false;
 		isRight = false;
 		isJump = false;
 		isPass = false;
 		movingDir = moving.None;
+	}
+	
+	void triggerPause()
+	{
+		pauseTime = Time.timeScale;
+		paused = true;
+		Time.timeScale = 0;
+		menu.renderer.enabled = true;
+	}
+	
+	void resumePause()
+	{
+		paused = false;
+		Time.timeScale = pauseTime;
+		menu.renderer.enabled = false;
 	}
 }
