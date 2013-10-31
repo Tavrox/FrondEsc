@@ -28,7 +28,7 @@ public class Skills : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-	
+
 	}
 	
 	public void useSkill(SkillList sk)
@@ -74,7 +74,8 @@ public class Skills : MonoBehaviour {
 	{
 		if (sk == SkillList.Knife)
 		{
-			MasterAudio.PlaySound("Player_knife_1");
+			MasterAudio.GrabBusByName("LOLILOL");
+			MasterAudio.PlaySound("LOLILOL");
 		}
 		else if (sk == SkillList.Axe)
 		{

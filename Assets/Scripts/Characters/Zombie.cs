@@ -24,6 +24,9 @@ public class Zombie : Enemy {
 		
 		GameEventManager.GameStart += GameStart;
 		GameEventManager.GameOver += GameOver;
+		GameEventManager.GamePause += GamePause;
+		GameEventManager.GameUnpause += GameUnpause;
+		
 		enabled = false;
 		
 		HP = 150;
@@ -38,15 +41,13 @@ public class Zombie : Enemy {
     void Update () {
 //		if(null) FindObjectOfType(typeof(Zombie));
 		
+		
 		isLeft = false;
 		isRight = false;
 		isJump = false;
 		isPass = false;
-		//System.Console.WriteLine("test");
 		movingDir = moving.None;
-			facingDir = facing.Left;
-		
-		Debug.Log(this.HP);
+		facingDir = facing.Left;
 		
 	    //rotate to look at the player
 		//    myTransform.rotation = Quaternion.Slerp(myTransform.rotation,
@@ -67,7 +68,6 @@ public class Zombie : Enemy {
 		if (Physics.Raycast(detectTargetLeft, out hitInfo, targetDetectionArea) || Physics.Raycast(detectTargetRight, out hitInfo, targetDetectionArea)) {
 			if(hitInfo.collider.tag == "Player") {
 				chasingPlayer = true;
-				//Debug.Log("CHASE");
 			}
 		}
 		
@@ -79,7 +79,6 @@ public class Zombie : Enemy {
 			if(hitInfo.collider.tag == "Boxes") {
 				isJump = true;
 				UpdateMovement();
-				//Debug.Log("JUMP");
 			}
 		}
     }
@@ -104,7 +103,6 @@ public class Zombie : Enemy {
 			}
 			if(HP <= 0) 
 			{
-				//Debug.Log("HEADSHOT");
 				chasingPlayer = false;
 				Destroy(gameObject);
 			}
@@ -113,15 +111,18 @@ public class Zombie : Enemy {
 	
 	private void Patrol () {
 		
-		if(waypoints.Length==0) print("No Waypoints linked");
-		print(Vector3.Distance(waypoints[waypointId].position, transform.position));
-		print(go);print(waypointId);
-		//print(waypoints[waypointId].position+" "+transform.position);
+		if(waypoints.Length<=0) print("No Waypoints linked");
+		
+//		print(Vector3.Distance(waypoints[waypointId].position, transform.position));
+//		print(go);print(waypointId);
+//		print(waypoints[waypointId].position+" "+transform.position);
+		
 		if(Vector3.Distance(transform.position, waypoints[waypointId].position) < 1) {
 			go = !go;
 			if(go) waypointId=0;
 			else if (!go) waypointId=1;
 		}
+		
 //		if(Vector3.Distance(transform.position, waypoints[waypointId].position) < 1) {
 //			if(go) waypointId++;
 //			else waypointId--;
@@ -168,6 +169,14 @@ public class Zombie : Enemy {
 		isJump = false;
 		isPass = false;
 		movingDir = moving.None;
+	}
+	private void GamePause()
+	{
+		enabled = false;	
+	}
+	private void GameUnpause()
+	{
+		enabled = true;	
 	}
 //	void OnGUI() {
 //		Rect rect = new Rect(0,0,250,50);

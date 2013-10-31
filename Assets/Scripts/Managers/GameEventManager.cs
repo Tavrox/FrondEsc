@@ -5,7 +5,8 @@ public static class GameEventManager {
 
 	public delegate void GameEvent();
 	
-	public static event GameEvent GameStart, GameOver, NextLevel, PreviousLevel;
+	public static event GameEvent GameStart, GamePause, GameUnpause, GameOver, NextLevel, PreviousLevel;
+	public static bool gamePaused = false;
 	
 	public static void TriggerGameStart(){
 		if(GameStart != null){					
@@ -27,6 +28,25 @@ public static class GameEventManager {
 	public static void TriggerPreviousLevel(){
 		if(PreviousLevel != null){
 			PreviousLevel();
+		}
+	}
+	public static void TriggerGamePause()
+	{
+		if(GamePause != null)
+		{
+			Debug.Log("Pause");
+			gamePaused = true;
+			GamePause();
+		}
+	}
+	public static void TriggerGameUnpause()
+	{
+		Debug.Log("OMG");
+		if(GameUnpause != null)
+		{
+			Debug.Log("Unpause");
+			gamePaused = false;
+			GameUnpause();
 		}
 	}
 }

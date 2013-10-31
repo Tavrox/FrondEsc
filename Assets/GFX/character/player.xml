@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>playerRun01.png</key>
+            <key>Lanceur000Idle.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{1,1},{80,100}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>playerRun02.png</key>
+            <key>Lanceur001Cour.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{82,1},{80,100}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>playerRun03.png</key>
+            <key>Lanceur002Cour.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{163,1},{80,100}}</string>
@@ -43,7 +43,46 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>playerRun04.png</key>
+            <key>Lanceur003Cour.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{244,1},{80,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,100}}</string>
+                <key>sourceSize</key>
+                <string>{80,100}</string>
+            </dict>
+            <key>Lanceur004Cour.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{325,1},{80,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,100}}</string>
+                <key>sourceSize</key>
+                <string>{80,100}</string>
+            </dict>
+            <key>Lanceur005Cour.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{406,1},{80,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,100}}</string>
+                <key>sourceSize</key>
+                <string>{80,100}</string>
+            </dict>
+            <key>Lanceur006Cour.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{1,102},{80,100}}</string>
@@ -56,7 +95,7 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>playerRun05.png</key>
+            <key>Lanceur007Cour.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{82,102},{80,100}}</string>
@@ -69,7 +108,7 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>playerRun06.png</key>
+            <key>Lanceur009Lance.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{163,102},{80,100}}</string>
@@ -82,10 +121,10 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>playerRun07.png</key>
+            <key>Lanceur010Lance.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{82,102},{80,100}}</string>
+                <string>{{244,102},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -95,10 +134,10 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>playerRun08.png</key>
+            <key>Lanceur011Lance.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,102},{80,100}}</string>
+                <string>{{325,102},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -108,10 +147,10 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>playerRun09.png</key>
+            <key>Lanceur012Lance.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{163,1},{80,100}}</string>
+                <string>{{406,102},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -121,10 +160,114 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>playerRun10.png</key>
+            <key>Lanceur013Lance.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{82,1},{80,100}}</string>
+                <string>{{1,203},{80,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,100}}</string>
+                <key>sourceSize</key>
+                <string>{80,100}</string>
+            </dict>
+            <key>Lanceur014Saut.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{82,203},{80,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,100}}</string>
+                <key>sourceSize</key>
+                <string>{80,100}</string>
+            </dict>
+            <key>Lanceur015Saut.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{163,203},{80,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,100}}</string>
+                <key>sourceSize</key>
+                <string>{80,100}</string>
+            </dict>
+            <key>Lanceur016Saut.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{244,203},{80,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,100}}</string>
+                <key>sourceSize</key>
+                <string>{80,100}</string>
+            </dict>
+            <key>Lanceur017Saut.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{325,203},{80,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,100}}</string>
+                <key>sourceSize</key>
+                <string>{80,100}</string>
+            </dict>
+            <key>Lanceur018Saut.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{406,203},{80,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,100}}</string>
+                <key>sourceSize</key>
+                <string>{80,100}</string>
+            </dict>
+            <key>Lanceur019Saut.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1,304},{80,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,100}}</string>
+                <key>sourceSize</key>
+                <string>{80,100}</string>
+            </dict>
+            <key>Lanceur020Saut.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{82,304},{80,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,100}}</string>
+                <key>sourceSize</key>
+                <string>{80,100}</string>
+            </dict>
+            <key>Lanceur021Saut.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{163,304},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -142,9 +285,9 @@
             <key>realTextureFileName</key>
             <string>player.png</string>
             <key>size</key>
-            <string>{256,256}</string>
+            <string>{512,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:cefb3baf2e493491fad9c12edcc2e758:1/1$</string>
+            <string>$TexturePacker:SmartUpdate:7e564c994210d617287b7324c9d91032:1/1$</string>
             <key>textureFileName</key>
             <string>player.png</string>
         </dict>

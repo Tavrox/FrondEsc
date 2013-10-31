@@ -13,9 +13,7 @@ public class Player : Character {
 	public Skills skill_shield;
 	public OTSprite menu;
 	
-	private bool paused = false;
-	private float pauseTime;
-	
+	public bool shootingKnife;
 	
 	// Use this for initialization
 	public override void Start () 
@@ -24,6 +22,9 @@ public class Player : Character {
 		
 		GameEventManager.GameStart += GameStart;
 		GameEventManager.GameOver += GameOver;
+		GameEventManager.GamePause += GamePause;
+		GameEventManager.GameUnpause += GameUnpause;
+		
 		enabled = false;
 		hasShield = false;
 		spawnPos = thisTransform.position;
@@ -33,7 +34,6 @@ public class Player : Character {
 	// Update is called once per frame
 	public void Update () 
 	{
-		print ("Player shield " + hasShield);
 		
 		// these are false unless one of keys is pressed
 		isLeft = false;
@@ -41,67 +41,71 @@ public class Player : Character {
 		isJump = false;
 		isGoDown = false;
 		isPass = false;
+		
+		shootingKnife = false;
 		//System.Console.WriteLine("test");
 		movingDir = moving.None;
 		
-		if (paused != true)
+		// keyboard input
+		if(Input.GetKey("left")) 
+		{ 
+			//Debug.Log("left");
+			isLeft = true;
+			shootLeft = true;
+			facingDir = facing.Left;
+		}
+		if (Input.GetKey("right") && isLeft == false) 
+		{ 
+			isRight = true; 
+			facingDir = facing.Right;
+			shootLeft = false;
+		}
+		if (Input.GetKey(KeyCode.DownArrow))
 		{
-			// keyboard input
-			if(Input.GetKey("left")) 
-			{ 
-				//Debug.Log("left");
-				isLeft = true;
-				shootLeft = true;
-				facingDir = facing.Left;
-			}
-			if (Input.GetKey("right") && isLeft == false) 
-			{ 
-				isRight = true; 
-				facingDir = facing.Right;
-				shootLeft = false;
-			}
-			if (Input.GetKey(KeyCode.DownArrow))
-			{
-				isGoDown = true;
-				facingDir = facing.Down;
-			}
-			if (Input.GetKeyDown("up")) 
-			{ 
-				isJump = true; 
-			}
-			
-			if(Input.GetKeyDown("space"))
-			{
-				isPass = true;
-			}
-			if(Input.GetKeyDown(KeyCode.A))
-			{
-				isShot = true;
-			}
-			if (Input.GetKeyDown(KeyCode.Alpha1))
-			{
-				skill_knife.useSkill(Skills.SkillList.Knife);
-			}
-			if (Input.GetKeyDown(KeyCode.Alpha2))
-			{
-				skill_axe.useSkill(Skills.SkillList.Axe);
-			}
-			if (Input.GetKeyDown(KeyCode.Alpha3))
-			{
-				skill_shield.useSkill(Skills.SkillList.Shield);
-			}
+			isGoDown = true;
+			facingDir = facing.Down;
+		}
+		if (Input.GetKeyDown("up")) 
+		{ 
+			isJump = true; 
+		}
+		
+		if(Input.GetKeyDown("space"))
+		{
+			isPass = true;
+		}
+		if(Input.GetKeyDown(KeyCode.A))
+		{
+			isShot = true;
+		}
+		if (Input.GetKeyDown(KeyCode.Alpha1))
+		{
+			skill_knife.useSkill(Skills.SkillList.Knife);
+			shootingKnife = true;
+		}
+		if (Input.GetKeyDown(KeyCode.Alpha2))
+		{
+			skill_axe.useSkill(Skills.SkillList.Axe);
+		}
+		if (Input.GetKeyDown(KeyCode.Alpha3))
+		{
+			skill_shield.useSkill(Skills.SkillList.Shield);
+			hasShield = true;
 		}
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
-			if (paused == true)
+			if (GameEventManager.gamePaused == false)
 			{
-				resumePause();	
+				GameEventManager.TriggerGamePause();
 			}
-			else if (paused == false)
+			else if (GameEventManager.gamePaused == true)
 			{
-				triggerPause();	
+				GameEventManager.TriggerGameUnpause();
 			}
 		}
+		
+		print ("Check Shiedl" + hasShield);
+		
 		UpdateMovement();
 	}
 	
@@ -121,19 +125,12 @@ public class Player : Character {
 		isPass = false;
 		movingDir = moving.None;
 	}
-	
-	void triggerPause()
+	private void GamePause()
 	{
-		pauseTime = Time.timeScale;
-		paused = true;
-		Time.timeScale = 0;
-		menu.renderer.enabled = true;
+		enabled = false;	
 	}
-	
-	void resumePause()
+	private void GameUnpause()
 	{
-		paused = false;
-		Time.timeScale = pauseTime;
-		menu.renderer.enabled = false;
+		enabled = true;	
 	}
 }

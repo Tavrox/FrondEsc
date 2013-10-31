@@ -10,6 +10,7 @@ public class Bullets : MonoBehaviour {
 	
 	public int ID;
 	public float BulletSpeed;
+	public float ShieldDamages;
 	public int stackSize;
 	
 	public enum bullTopo { Physic, Magic, Shield };
@@ -113,45 +114,33 @@ public class Bullets : MonoBehaviour {
 			}
 			trans.position = new Vector3(Owner.transform.position.x, Owner.transform.position.y ,Owner.transform.position.z);
 		}
+		print ("Shield HP Left : " + ShieldDamages);
 	}
 	
-	void onTriggerEnter()
+	void OnTriggerEnter( Collider other)
 	{
-		
-	}
-	
-	// OBSOLETE
-	bool checkCollisionLevel()
-	{
-		if (Physics.Raycast(trans.position, buildVectorBull(), out rayInfo, rayDist , platformMask) || Physics.Raycast(trans.position, buildVectorBull(), out rayInfo, rayDist , groundMask))
+		switch (other.gameObject.tag)
 		{
-			Destroy(gameObject, 0.4f);
-			MeshRenderer.Destroy(this, 0.4f);
-			Debug.DrawLine (trans.position, rayInfo.point, Color.cyan);
-			return true;
-		}
-		else return false;
-	}
-	
-	
-	//OBSOLETE
-	bool checkPlayerHitOpp()
-	{
-		if (Physics.Raycast(trans.position, buildVectorBull(), out rayInfo, rayDist , enemiesMask))
-		{
-			Destroy(this.gameObject);
-			return true;
-		}
-		else return false;
-	}
-	
-	public void onTriggerEnter( Collider other)
-	{
-		if(other.gameObject.CompareTag("Platforms") || (other.gameObject.CompareTag("Ground")) || (other.gameObject.CompareTag("Enemy")))
-		{
+			case ("Zombie") :
+			{
+				switch (bullType)
+				{
+					case (bullTopo.Shield) :
+					{
+						
+						break;
+					}
+					default :
+					{
+						Destroy(this.gameObject);
+						MasterAudio.PlaySound("Zombie_hitplayer_1");
+						break;
+					}
+				}
+				break;
+			}
 			
 		}
-		
 	}
 	
 	void invertSprite(Transform spr)

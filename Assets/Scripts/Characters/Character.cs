@@ -77,7 +77,7 @@ public class Character : MonoBehaviour
 //	private float charHalfX = 0.5f ;
 	
 //	private float absoluteVectorFixedX;
-	private float absoluteVectorFixedY;
+	private float absoluteVectorFixedY = 0f;
 	
 	// layer masks
 	protected int groundMask = 1 << 8; // Ground, Block

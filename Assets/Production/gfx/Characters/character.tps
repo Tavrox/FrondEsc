@@ -22,7 +22,7 @@
         <key>dataFormat</key>
         <string>cocos2d</string>
         <key>textureFileName</key>
-        <filename>player.png</filename>
+        <filename>../../../GFX/character/player.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -111,7 +111,7 @@
             <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
         <key>dataFileName</key>
-        <filename>player.xml</filename>
+        <filename>../../../GFX/character/player.xml</filename>
         <key>multiPack</key>
         <false/>
         <key>mainExtension</key>
@@ -148,16 +148,27 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>playerRun03.png</filename>
-            <filename>playerRun04.png</filename>
-            <filename>playerRun05.png</filename>
-            <filename>playerRun06.png</filename>
-            <filename>playerRun07.png</filename>
-            <filename>playerRun08.png</filename>
-            <filename>playerRun09.png</filename>
-            <filename>playerRun10.png</filename>
-            <filename>playerRun01.png</filename>
-            <filename>playerRun02.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur003Cour.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur004Cour.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur005Cour.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur006Cour.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur007Cour.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur009Lance.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur010Lance.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur011Lance.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur012Lance.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur013Lance.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur014Saut.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur015Saut.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur016Saut.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur017Saut.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur018Saut.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur019Saut.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur020Saut.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur021Saut.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur000Idle.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur001Cour.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur002Cour.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
