@@ -699,7 +699,6 @@ public class OTView : MonoBehaviour
 			CheckViewSize();
 		}
 		
-	
 		if (Application.isPlaying && OT.world2D)
 		{
 			// check movement and rotation targets			

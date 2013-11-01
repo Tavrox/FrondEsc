@@ -6,6 +6,8 @@ public class GUIManager : MonoBehaviour {
 	public GUIText gameOverText, instructionsText;
 	public GUIText HPTxt;
 	
+	private Player _player;
+	
 	// Use this for initialization
 	void Start () 
 	{
@@ -26,6 +28,10 @@ public class GUIManager : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.Escape)){
 			GameEventManager.TriggerGameUnpause();
 		}
+		_player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+		HPTxt.transform.position = new Vector3(_player.transform.position.x, _player.transform.position.y+2,_player.transform.position.z);
+		HPTxt.transform.localPosition = new Vector3(_player.transform.position.x, _player.transform.position.y+2,_player.transform.position.z);
+
 	}
 	
 	private void GameStart () {

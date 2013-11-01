@@ -4,16 +4,21 @@ using System.Collections;
 public class Player : Character {
 	
 	[HideInInspector] public Vector3 position;
+	[HideInInspector] public Transform trans;
 	
 	[HideInInspector] public Dialog dialog;
 	//public Skill skillLaunch;
 	
+	public SkillManager skillManager;
 	public Skills skill_knife;
 	public Skills skill_axe;
 	public Skills skill_shield;
 	public OTSprite menu;
 	
+	public GUIText hp_display;
+	
 	public bool shootingKnife;
+	[HideInInspector] public bool paused = false;
 	
 	// Use this for initialization
 	public override void Start () 
@@ -104,7 +109,7 @@ public class Player : Character {
 			}
 		}
 		
-		print ("Check Shiedl" + hasShield);
+		print ("Check Shield" + hasShield);
 		
 		UpdateMovement();
 	}
@@ -127,10 +132,18 @@ public class Player : Character {
 	}
 	private void GamePause()
 	{
-		enabled = false;	
+		enabled = false;
+		isLeft = false;
+		isRight = false;
+		isJump = false;
+		isPass = false;
+		paused = true;
+		movingDir = moving.None;
+		
 	}
 	private void GameUnpause()
 	{
+		paused = false;
 		enabled = true;	
 	}
 }

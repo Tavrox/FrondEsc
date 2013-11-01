@@ -11,28 +11,29 @@ public class CharacterAnims : MonoBehaviour
 	//public tk2dAnimatedSprite animSprite;
 	
 	private anim currentAnim;
-	private Character character;
-	private Player aplayer;
+	private Character _character;
+	private Player _player;
 	
 	private bool animPlaying = false;
 	
 	// Use this for initialization
 	void Start () 
 	{
-		character = GetComponent<Character>();
-		aplayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();;
+		_character = GetComponent<Character>();
+		_player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 	}
 	
 	void Update() 
 	{
+		animSprite.looping = true;
 		// run left
-		if(character.isLeft && character.grounded == true && currentAnim != anim.WalkLeft)
+		if(_character.isLeft && _character.grounded == true && currentAnim != anim.WalkLeft)
 		{
 			currentAnim = anim.WalkLeft;
 			animSprite.Play("run");
 			spriteParent.localScale = new Vector3(-1,1,1);
 		}
-		if(!character.isLeft && character.grounded == true && currentAnim != anim.StandLeft && character.facingDir == Character.facing.Left && animPlaying == false)
+		if(!_character.isLeft && _character.grounded == true && currentAnim != anim.StandLeft && _character.facingDir == Character.facing.Left && animPlaying == false)
 		{
 			currentAnim = anim.StandLeft;
 			animSprite.Play("stand"); // stand left
@@ -40,13 +41,13 @@ public class CharacterAnims : MonoBehaviour
 		}
 		
 		// run right
-		if(character.isRight && character.grounded && currentAnim != anim.WalkRight)
+		if(_character.isRight && _character.grounded && currentAnim != anim.WalkRight)
 		{
 			currentAnim = anim.WalkRight;
 			animSprite.Play("run");
 			spriteParent.localScale = new Vector3(1,1,1);
 		}
-		if(!character.isRight && character.grounded && currentAnim != anim.StandRight && character.facingDir == Character.facing.Right && animPlaying == false)
+		if(!_character.isRight && _character.grounded && currentAnim != anim.StandRight && _character.facingDir == Character.facing.Right && animPlaying == false)
 		{
 			currentAnim = anim.StandRight;
 			animSprite.Play("stand"); // stand left
@@ -54,13 +55,13 @@ public class CharacterAnims : MonoBehaviour
 		}
 		
 		// falling
-		if(character.grounded == false && currentAnim != anim.FallLeft && character.facingDir == Character.facing.Left)
+		if(_character.grounded == false && currentAnim != anim.FallLeft && _character.facingDir == Character.facing.Left)
 		{
 			currentAnim = anim.FallLeft;
 			animSprite.Play("jump"); // fall left
 			spriteParent.localScale = new Vector3(-1,1,1);
 		}
-		if(character.grounded == false && currentAnim != anim.FallRight && character.facingDir == Character.facing.Right)
+		if(_character.grounded == false && currentAnim != anim.FallRight && _character.facingDir == Character.facing.Right)
 		{
 			currentAnim = anim.FallRight;
 			animSprite.Play("jump"); // fall right
@@ -69,7 +70,7 @@ public class CharacterAnims : MonoBehaviour
 		
 		// PLAYER SPECIFIC ANIMS
 		// Shooting
-		if (aplayer.shootingKnife == true)
+		if (_player.shootingKnife == true)
 		{
 			animPlaying = true;
 			currentAnim = anim.ShootRight;
@@ -79,11 +80,17 @@ public class CharacterAnims : MonoBehaviour
 		}
 		
 		//ENEMIES SPECIFIC ANIMS
-		if (character.isShot == true)
+		if (_character.isShot == true)
 		{
 			animPlaying = true;
 			animSprite.Play("hurt");
 			StartCoroutine( WaitAndCallback( animation.GetDuration(animation.framesets[2]) ) );
+		}
+		
+		if (_player.paused == true)
+		{
+			currentAnim = anim.None;
+			animSprite.looping = false;
 		}
 	}
 	

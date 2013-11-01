@@ -22,7 +22,7 @@
         <key>dataFormat</key>
         <string>cocos2d</string>
         <key>textureFileName</key>
-        <filename>tiles.png</filename>
+        <filename>../../../GFX/levels/tiles.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -111,7 +111,7 @@
             <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
         <key>dataFileName</key>
-        <filename>tiles.xml</filename>
+        <filename>../../../GFX/levels/tiles.xml</filename>
         <key>multiPack</key>
         <false/>
         <key>mainExtension</key>
@@ -148,7 +148,7 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>ground_deep.png</filename>
+            <filename>tile.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

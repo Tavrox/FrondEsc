@@ -13,6 +13,10 @@ public class Skills : MonoBehaviour {
 	public float cooldown;
 	public Input selec;
 	public int damages;
+	public int shieldDuration;
+	
+	[HideInInspector] public bool canCast = true;
+	[HideInInspector] public float currCD;
 	
 	public enum SkillList {Knife, Axe, Shield};
 	public SkillList SkillNames;
@@ -23,7 +27,7 @@ public class Skills : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
 	{
-	
+		canCast = true;
 	}
 	// Update is called once per frame
 	void Update ()
@@ -33,23 +37,30 @@ public class Skills : MonoBehaviour {
 	
 	public void useSkill(SkillList sk)
 	{
-		if (sk == SkillList.Knife)
+		if (sk == SkillList.Knife && canCast == true)
 		{
 			launchBullets(sk);
 			gfxFb(sk);
 			sfxFB(sk);
 		}
-		else if (sk == SkillList.Axe)
+		else if (sk == SkillList.Axe && canCast == true)
 		{
 			launchBullets(sk);
 			gfxFb(sk);
 		}
-		else if (sk == SkillList.Shield) 
+		else if (sk == SkillList.Shield && canCast == true) 
 		{
 			launchShield(sk);
 			gfxFb(sk);
-			print (sk);
 		}
+		StartCoroutine( waitUntilCD(cooldown) );
+		canCast = false;
+	}
+	
+	IEnumerator waitUntilCD(float waitTime)
+	{
+		yield return new WaitForSeconds(waitTime);
+	    canCast = true;
 	}
 	
 	private void launchBullets(SkillList sk)
@@ -85,4 +96,5 @@ public class Skills : MonoBehaviour {
 			
 		}
 	}
+	
 }

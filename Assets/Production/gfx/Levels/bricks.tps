@@ -22,7 +22,7 @@
         <key>dataFormat</key>
         <string>cocos2d</string>
         <key>textureFileName</key>
-        <filename>ldbricks.png</filename>
+        <filename>../../../GFX/levels/ldbricks.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -111,7 +111,7 @@
             <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
         <key>dataFileName</key>
-        <filename>ldbricks.xml</filename>
+        <filename>../../../GFX/levels/ldbricks.xml</filename>
         <key>multiPack</key>
         <false/>
         <key>mainExtension</key>
@@ -150,6 +150,10 @@
         <array>
             <filename>crate.png</filename>
             <filename>platform.png</filename>
+            <filename>previousdoor.png</filename>
+            <filename>nextdoor.png</filename>
+            <filename>lever.png</filename>
+            <filename>healthpotion.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

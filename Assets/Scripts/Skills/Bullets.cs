@@ -10,7 +10,7 @@ public class Bullets : MonoBehaviour {
 	
 	public int ID;
 	public float BulletSpeed;
-	public float ShieldDamages;
+	private bool shieldOver = false;
 	public int stackSize;
 	
 	public enum bullTopo { Physic, Magic, Shield };
@@ -52,7 +52,6 @@ public class Bullets : MonoBehaviour {
 				break;
 			}
 		}
-		
 		// Rotate the bullet to match direction
 		switch (bullDirection)
 		{
@@ -76,10 +75,19 @@ public class Bullets : MonoBehaviour {
 				break;
 			}
 		}
+		StartCoroutine( shieldTimer( Skill.shieldDuration) );
+		print ("Start Coroutine");
+		print ("Shield Duration " + Skill.shieldDuration);
+		
 	}
 	
 	void Update ()
 	{
+		if (shieldOver == true && bullType == bullTopo.Shield)
+		{
+			Destroy(this.gameObject);
+			print ("Shield destroyed");
+		}
 		if (bullType == bullTopo.Magic || bullType == bullTopo.Physic)
 		{
 			switch (bullDirection)
@@ -114,7 +122,6 @@ public class Bullets : MonoBehaviour {
 			}
 			trans.position = new Vector3(Owner.transform.position.x, Owner.transform.position.y ,Owner.transform.position.z);
 		}
-		print ("Shield HP Left : " + ShieldDamages);
 	}
 	
 	void OnTriggerEnter( Collider other)
@@ -141,6 +148,12 @@ public class Bullets : MonoBehaviour {
 			}
 			
 		}
+	}
+	
+	IEnumerator shieldTimer(float waitTime)
+	{
+		yield return new WaitForSeconds(waitTime);
+	    shieldOver = true;
 	}
 	
 	void invertSprite(Transform spr)

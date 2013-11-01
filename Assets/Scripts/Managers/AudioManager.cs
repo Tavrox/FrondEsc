@@ -2,6 +2,17 @@
 using System.Collections;
 
 public class AudioManager : MonoBehaviour {
+	
+	public AudioClip[] tracks;
+	public float[] clipVolume;
+	public enum Conditions
+	{
+		Die,
+		HP,
+		
+	}
+	
+	
 
 	// Use this for initialization
 	void Start () {
@@ -16,4 +27,10 @@ public class AudioManager : MonoBehaviour {
 			MasterAudio.TriggerPlaylistClip("Music_Univers1");
 		}
 	}
+	
+	void fadeOut(float duration)
+	{
+		
+	}
+
 }
