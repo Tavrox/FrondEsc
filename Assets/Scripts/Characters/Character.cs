@@ -5,8 +5,8 @@ public enum MyTeam { Team1, Team2, None }
 
 public class Character : MonoBehaviour 
 {
-	public MyTeam myTeam = MyTeam.Team1;
-	
+	public OTAnimatingSprite sprite;
+
 	/** ADD **/
 	public int HP, res_phys, res_mag;
 	[HideInInspector] public bool isShot;
@@ -47,35 +47,30 @@ public class Character : MonoBehaviour
 	
 	[HideInInspector] public Transform thisTransform;
 	
-	private float moveVel = 4f;
-//	private float walkVel = 3f; // walk while carrying ball
 	private Vector3 vectorFixed;
 	protected Vector3 vectorMove;
 	
-	private float jumpVel = 16f;
-	private float jump2Vel = 14f;
-	private float fallVel = 18f;
+	[Range (0,10)] 	public float 	moveVel = 4f;
+	[Range (0,30)] 	public float 	jumpVel = 16f;
+	[Range (0,30)] 	public float 	jump2Vel = 14f;
+	[Range (1,2)] 	public int 		maxJumps = 2;
+	[Range (15,25)] public float 	fallVel = 18f;
 	
 	private int jumps = 0;
-    private int maxJumps = 2; // set to 2 for double jump
-	
-	private float gravityY;// = 52f;
+	private float gravityY;
 	private float maxVelY = 0f;
 		
 	private RaycastHit hitInfo;
-	private float halfMyX = 0.325f; //0.25f;
-	private float halfMyY = 0.5f;//0.375f;
+	private float halfMyX;
+	private float halfMyY;
+	private double doubleTo;
 	[HideInInspector] public float rayDistUp = 0.375f;
 	
 	private float absVel2X;
 	private float absVel2Y;
+	
 //	private float rayDistanceUp = 0.25f;
-	private float rayDistanceDown = 0.7f;
-	
-	
-	private float charHalfY = 0.6f;
-//	private float charHalfX = 0.5f ;
-	
+	private float rayDistanceDown = 1.2f;
 //	private float absoluteVectorFixedX;
 	private float absoluteVectorFixedY = 0f;
 	
@@ -83,14 +78,11 @@ public class Character : MonoBehaviour
 	protected int groundMask = 1 << 8; // Ground, Block
 	protected int platformMask = 1 << 9; //Block
 	private float pfPassSpeed = 2.8f;
-		
-	protected bool hasBall = false;
-	protected string team = "";
-	
 	
 	public virtual void Awake()
 	{
 		thisTransform = transform;
+	
 	}
 	
 	// Use this for initialization
@@ -98,6 +90,8 @@ public class Character : MonoBehaviour
 	{
 		maxVelY = fallVel;
 		vectorMove.y = 0;
+		halfMyX = GetComponentInChildren<Transform>().GetComponentInChildren<OTAnimatingSprite>().size.x * 0.5f;
+		halfMyY = GetComponentInChildren<Transform>().GetComponentInChildren<OTAnimatingSprite>().size.y * 0.5f;
 		StartCoroutine(StartGravity());
 	}
 	
@@ -111,6 +105,7 @@ public class Character : MonoBehaviour
 	// Update is called once per frame
 	public virtual void UpdateMovement() 
 	{
+		
 		if(alive == false) return;
 		
 		vectorMove.x = 0;
@@ -186,19 +181,18 @@ public class Character : MonoBehaviour
 		absVel2X = Mathf.Abs(vectorFixed.x);
 		absVel2Y = Mathf.Abs(vectorFixed.y);
 		
-		if (Physics.Raycast(new Vector3(thisTransform.position.x-0.25f,thisTransform.position.y,thisTransform.position.z), -Vector3.up, out hitInfo, rayDistanceDown + absoluteVectorFixedY, groundMask)
-		|| Physics.Raycast(new Vector3(thisTransform.position.x+0.25f,thisTransform.position.y,thisTransform.position.z), -Vector3.up, out hitInfo, rayDistanceDown + absoluteVectorFixedY, groundMask))
+		if (Physics.Raycast(new Vector3(thisTransform.position.x,thisTransform.position.y,thisTransform.position.z), -Vector3.up, out hitInfo, rayDistanceDown + absoluteVectorFixedY, groundMask))
 		{
 			BlockedDown();
 			if (isGoDown == true)
 			{
 				isCrounch = true;
 			}
-			Debug.DrawLine (thisTransform.position, hitInfo.point, Color.cyan);
+			Debug.DrawLine (thisTransform.position, hitInfo.point, Color.green);
 		}
 		
-		if (Physics.Raycast(new Vector3(thisTransform.position.x-0.25f,thisTransform.position.y,thisTransform.position.z), -Vector3.up, out hitInfo, rayDistanceDown +absoluteVectorFixedY, platformMask)
-		|| Physics.Raycast(new Vector3(thisTransform.position.x+0.25f,thisTransform.position.y,thisTransform.position.z), -Vector3.up, out hitInfo, rayDistanceDown + absoluteVectorFixedY, platformMask))
+		if (Physics.Raycast(new Vector3(thisTransform.position.x,thisTransform.position.y,thisTransform.position.z), Vector3.up, out hitInfo, rayDistanceDown +absoluteVectorFixedY, platformMask)
+		|| Physics.Raycast(new Vector3(thisTransform.position.x,thisTransform.position.y,thisTransform.position.z), Vector3.up, out hitInfo, rayDistanceDown + absoluteVectorFixedY, platformMask))
 		{
 			if (isGoDown == true)
 			{
@@ -209,37 +203,28 @@ public class Character : MonoBehaviour
 			{
 				BlockedDown();
 			}
-			Debug.DrawLine (thisTransform.position, hitInfo.point, Color.cyan);
-		}
-		//par le bas
-		if (Physics.Raycast(new Vector3(thisTransform.position.x,thisTransform.position.y,thisTransform.position.z), Vector3.down, out hitInfo, 0.6f+absVel2Y, groundMask))
-		{			
-			// not while jumping so he can pass up thru platforms
-			if(vectorMove.y <= 0)
-			{
-				grounded = true;
-				vectorMove.y = 0f; // stop falling			
-				thisTransform.position = new Vector3(thisTransform.position.x,hitInfo.point.y+halfMyY,0f);
-			}
+			Debug.DrawLine (thisTransform.position, hitInfo.point, Color.red);
 		}
 		
 		// blocked up
-		/*if (Physics.Raycast(new Vector3(thisTransform.position.x-0.2f,thisTransform.position.y,thisTransform.position.z), Vector3.up, out hitInfo, rayDistUp+absVel2Y, groundMask)
+		if (Physics.Raycast(new Vector3(thisTransform.position.x-0.2f,thisTransform.position.y,thisTransform.position.z), Vector3.up, out hitInfo, rayDistUp+absVel2Y, groundMask)
 			|| Physics.Raycast(new Vector3(thisTransform.position.x+0.2f,thisTransform.position.y,thisTransform.position.z), Vector3.up, out hitInfo, rayDistUp+absVel2Y, groundMask))
 		{
 			BlockedUp();
-		}*/
+		}
 		
 		// blocked on right
 		if (Physics.Raycast(new Vector3(thisTransform.position.x,thisTransform.position.y,thisTransform.position.z), Vector3.right, out hitInfo, halfMyX+absVel2X, groundMask))
 		{
 			BlockedRight();
+			Debug.DrawRay(new Vector3(thisTransform.position.x,thisTransform.position.y,thisTransform.position.z), Vector3.right, Color.cyan);
 		}
 		
 		// blocked on left
 		if(Physics.Raycast(new Vector3(thisTransform.position.x,thisTransform.position.y,thisTransform.position.z), Vector3.left, out hitInfo, halfMyX+absVel2X, groundMask))
 		{
 			BlockedLeft();
+			Debug.DrawRay(new Vector3(thisTransform.position.x,thisTransform.position.y,thisTransform.position.z), Vector3.left, Color.cyan);
 		}
 	}
 	
@@ -258,7 +243,7 @@ public class Character : MonoBehaviour
 			grounded = true;
 			isJump = false;
 			vectorMove.y = 0f;
-			thisTransform.position = new Vector3(thisTransform.position.x, hitInfo.point.y + charHalfY, 0f);
+			thisTransform.position = new Vector3(thisTransform.position.x, hitInfo.point.y + halfMyY, 0f);
 		}
 	}
 	void BlockedRight()
@@ -268,6 +253,7 @@ public class Character : MonoBehaviour
 			blockedRight = true;
 			vectorMove.x = 0f;
 			thisTransform.position = new Vector3(hitInfo.point.x-(halfMyX-0.01f),thisTransform.position.y, 0f); // .01 less than collision width.
+			
 		}
 	}
 	
@@ -284,5 +270,10 @@ public class Character : MonoBehaviour
 	void ThroughPlatform()
 	{
 		vectorMove.y -= pfPassSpeed;
+	}
+	
+	void OnGUI()
+	{
+		moveVel = GUI.HorizontalSlider (new Rect (25, 25, 100, 30), moveVel, 0f, 10f);
 	}
 }

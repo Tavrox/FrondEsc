@@ -119,69 +119,104 @@ MonoBehaviour:
   sizeTextures: []
   generateSprites: 0
   atlasData:
-  - name: zombie1_03
+  - name: zombie0001
     position: {x: 1, y: 1}
     offset: {x: 0, y: 0}
     rotated: 0
-    size: {x: 84, y: 110}
-    frameSize: {x: 84, y: 110}
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
     metaData: []
-  - name: zombie2_03
-    position: {x: 86, y: 1}
+  - name: zombie0002
+    position: {x: 82, y: 1}
     offset: {x: 0, y: 0}
     rotated: 0
-    size: {x: 84, y: 110}
-    frameSize: {x: 84, y: 110}
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
     metaData: []
-  - name: zombie3_03
-    position: {x: 171, y: 1}
+  - name: zombie0003
+    position: {x: 163, y: 1}
     offset: {x: 0, y: 0}
     rotated: 0
-    size: {x: 84, y: 110}
-    frameSize: {x: 84, y: 110}
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
     metaData: []
-  - name: zombie4_03
-    position: {x: 1, y: 112}
+  - name: zombie0004
+    position: {x: 1, y: 102}
     offset: {x: 0, y: 0}
     rotated: 0
-    size: {x: 84, y: 110}
-    frameSize: {x: 84, y: 110}
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
     metaData: []
-  - name: zombie5_03
-    position: {x: 86, y: 112}
+  - name: zombie0005
+    position: {x: 82, y: 102}
     offset: {x: 0, y: 0}
     rotated: 0
-    size: {x: 84, y: 110}
-    frameSize: {x: 84, y: 110}
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
     metaData: []
-  - name: zombie6_03
-    position: {x: 171, y: 112}
+  - name: zombie0006
+    position: {x: 163, y: 102}
     offset: {x: 0, y: 0}
     rotated: 0
-    size: {x: 84, y: 110}
-    frameSize: {x: 84, y: 110}
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
     metaData: []
-  - name: zombie7_03
-    position: {x: 1, y: 223}
+  - name: zombie0007
+    position: {x: 1, y: 203}
     offset: {x: 0, y: 0}
     rotated: 0
-    size: {x: 84, y: 110}
-    frameSize: {x: 84, y: 110}
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
     metaData: []
-  - name: zombie8_03
-    position: {x: 86, y: 223}
+  - name: zombie0008
+    position: {x: 82, y: 203}
     offset: {x: 0, y: 0}
     rotated: 0
-    size: {x: 84, y: 110}
-    frameSize: {x: 84, y: 110}
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
+    metaData: []
+  - name: zombieHurt0001
+    position: {x: 163, y: 203}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
+    metaData: []
+  - name: zombieHurt0002
+    position: {x: 1, y: 304}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
+    metaData: []
+  - name: zombieHurt0003
+    position: {x: 82, y: 304}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
+    metaData: []
+  - name: zombieHurt0004
+    position: {x: 163, y: 304}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
+    metaData: []
+  - name: zombieHurt0005
+    position: {x: 1, y: 405}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
     metaData: []
   offsetSizing: 1
   metaType: 
   metaData: []
   _atlasDataFile: {fileID: 4900000, guid: 120c39f39d2670540a49dfe25e3aa419, type: 3}
   reloadData: 0
-  bytesDataFile: 4487
-  id: 8
+  bytesDataFile: 6852
+  id: 9
 --- !u!1 &95455487
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,6 +436,144 @@ Prefab:
   m_RootGameObject: {fileID: 95455487}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!43 &198386528
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: .5, y: .5, z: 0}
+  m_Shapes: []
+  m_ShapeVertices: []
+  m_MeshCompression: 0
+  m_StreamCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 000001000200020003000000
+  m_Skin: []
+  m_BindPose: []
+  m_VertexData:
+    m_CurrentChannels: 15
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 2
+      dimension: 1
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_Streams:
+    - channelMask: 15
+      offset: 0
+      stride: 36
+      dividerOp: 0
+      frequency: 0
+    - channelMask: 0
+      offset: 0
+      stride: 0
+      dividerOp: 0
+      frequency: 0
+    - channelMask: 0
+      offset: 0
+      stride: 0
+      dividerOp: 0
+      frequency: 0
+    - channelMask: 0
+      offset: 0
+      stride: 0
+      dividerOp: 0
+      frequency: 0
+    m_DataSize: 144
+    _typelessdata: 000000bf0000003f000000000000000000000000000080bfffffffff0000003b00807f3f0000003f0000003f000000000000000000000000000080bfffffffff0000223e00807f3f0000003f000000bf000000000000000000000000000080bfffffffff0000223e00804d3f000000bf000000bf000000000000000000000000000080bfffffffff0000003b00804d3f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BindPoses:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Colors:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: .5, y: .5, z: 0}
+  m_MeshUsageFlags: 0
+  m_MeshOptimized: 0
 --- !u!1 &302936511
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,7 +1168,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
       propertyPath: _size.y
-      value: .99999994
+      value: .999999881
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
       propertyPath: imageSize.x
@@ -1003,7 +1176,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
       propertyPath: imageSize.y
-      value: .99999994
+      value: .999999881
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
       propertyPath: _spriteContainer
@@ -1016,23 +1189,31 @@ Prefab:
     - target: {fileID: 3300000, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 2125540731}
+      objectReference: {fileID: 198386528}
     - target: {fileID: 2300000, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1662412383}
+      objectReference: {fileID: 1514833798}
     - target: {fileID: 400000, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
       propertyPath: m_LocalScale.x
       value: .99999994
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
       propertyPath: m_LocalScale.y
-      value: .99999994
+      value: .999999881
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
       propertyPath: _animation
       value: 
       objectReference: {fileID: 682533033}
+    - target: {fileID: 11400002, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
+      propertyPath: _frameName
+      value: Lanceur000Idle
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
+      propertyPath: moveVel
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
   m_RootGameObject: {fileID: 931250637}
@@ -1245,7 +1426,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.size
-      value: 8
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1301,7 +1482,7 @@ Prefab:
       objectReference: {fileID: 2800000, guid: 60b7285f54e160b4e9f131ee88f8e5df, type: 3}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[0].name
-      value: zombie1_03
+      value: zombie0001
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[0].position.x
@@ -1313,27 +1494,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[0].size.x
-      value: 84
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[0].size.y
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[0].frameSize.x
-      value: 84
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[0].frameSize.y
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[1].name
-      value: zombie2_03
+      value: zombie0002
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[1].position.x
-      value: 86
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[1].position.y
@@ -1341,27 +1522,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[1].size.x
-      value: 84
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[1].size.y
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[1].frameSize.x
-      value: 84
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[1].frameSize.y
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[2].name
-      value: zombie3_03
+      value: zombie0003
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[2].position.x
-      value: 171
+      value: 163
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[2].position.y
@@ -1369,23 +1550,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[2].size.x
-      value: 84
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[2].size.y
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[2].frameSize.x
-      value: 84
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[2].frameSize.y
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[3].name
-      value: zombie4_03
+      value: zombie0004
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[3].position.x
@@ -1393,83 +1574,83 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[3].position.y
-      value: 112
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[3].size.x
-      value: 84
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[3].size.y
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[3].frameSize.x
-      value: 84
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[3].frameSize.y
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[4].name
-      value: zombie5_03
+      value: zombie0005
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[4].position.x
-      value: 86
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[4].position.y
-      value: 112
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[4].size.x
-      value: 84
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[4].size.y
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[4].frameSize.x
-      value: 84
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[4].frameSize.y
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[5].name
-      value: zombie6_03
+      value: zombie0006
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[5].position.x
-      value: 171
+      value: 163
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[5].position.y
-      value: 112
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[5].size.x
-      value: 84
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[5].size.y
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[5].frameSize.x
-      value: 84
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[5].frameSize.y
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[6].name
-      value: zombie7_03
+      value: zombie0007
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[6].position.x
@@ -1477,59 +1658,199 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[6].position.y
-      value: 223
+      value: 203
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[6].size.x
-      value: 84
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[6].size.y
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[6].frameSize.x
-      value: 84
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[6].frameSize.y
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[7].name
-      value: zombie8_03
+      value: zombie0008
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[7].position.x
-      value: 86
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[7].position.y
-      value: 223
+      value: 203
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[7].size.x
-      value: 84
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[7].size.y
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[7].frameSize.x
-      value: 84
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[7].frameSize.y
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: bytesDataFile
-      value: 4487
+      value: 6852
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: id
-      value: 8
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[8].name
+      value: zombieHurt0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[8].position.x
+      value: 163
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[8].position.y
+      value: 203
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[8].size.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[8].size.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[8].frameSize.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[8].frameSize.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[9].name
+      value: zombieHurt0002
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[9].position.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[9].position.y
+      value: 304
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[9].size.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[9].size.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[9].frameSize.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[9].frameSize.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[10].name
+      value: zombieHurt0003
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[10].position.x
+      value: 82
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[10].position.y
+      value: 304
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[10].size.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[10].size.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[10].frameSize.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[10].frameSize.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[11].name
+      value: zombieHurt0004
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[11].position.x
+      value: 163
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[11].position.y
+      value: 304
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[11].size.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[11].size.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[11].frameSize.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[11].frameSize.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[12].name
+      value: zombieHurt0005
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[12].position.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[12].position.y
+      value: 405
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[12].size.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[12].size.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[12].frameSize.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[12].frameSize.y
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
@@ -1846,144 +2167,6 @@ MonoBehaviour:
     singleDuration: 0
     startIndex: 5
     _containerName: Skill
---- !u!43 &769118914
-Mesh:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  serializedVersion: 8
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 6
-    topology: 0
-    firstVertex: 0
-    vertexCount: 4
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: .5, y: .5, z: 0}
-  m_Shapes: []
-  m_ShapeVertices: []
-  m_MeshCompression: 0
-  m_StreamCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexBuffer: 000001000200020003000000
-  m_Skin: []
-  m_BindPose: []
-  m_VertexData:
-    m_CurrentChannels: 15
-    m_VertexCount: 4
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 24
-      format: 2
-      dimension: 1
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_Streams:
-    - channelMask: 15
-      offset: 0
-      stride: 36
-      dividerOp: 0
-      frequency: 0
-    - channelMask: 0
-      offset: 0
-      stride: 0
-      dividerOp: 0
-      frequency: 0
-    - channelMask: 0
-      offset: 0
-      stride: 0
-      dividerOp: 0
-      frequency: 0
-    - channelMask: 0
-      offset: 0
-      stride: 0
-      dividerOp: 0
-      frequency: 0
-    m_DataSize: 144
-    _typelessdata: 000000bf0000003f000000000000000000000000000080bfffffffff0000aa3e00807f3f0000003f0000003f000000000000000000000000000080bfffffffff0000803b00807f3f0000003f000000bf000000000000000000000000000080bfffffffff0000803b0080483f000000bf000000bf000000000000000000000000000080bfffffffff0000aa3e0080483f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BindPoses:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Colors:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: .5, y: .5, z: 0}
-  m_MeshUsageFlags: 0
-  m_MeshOptimized: 0
 --- !u!1 &778044878
 GameObject:
   m_ObjectHideFlags: 0
@@ -2103,76 +2286,153 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: Player
-  _sheetSize: {x: 256, y: 256}
+  _sheetSize: {x: 512, y: 512}
   texture: {fileID: 2800000, guid: 41118ea5cdb3a624fa5b6c7d0ce3d179, type: 3}
   sizeTextures: []
   generateSprites: 0
   atlasData:
-  - name: playerRun01
+  - name: Lanceur000Idle
     position: {x: 1, y: 1}
     offset: {x: 0, y: 0}
     rotated: 0
     size: {x: 80, y: 100}
     frameSize: {x: 80, y: 100}
     metaData: []
-  - name: playerRun02
+  - name: Lanceur001Cour
     position: {x: 82, y: 1}
     offset: {x: 0, y: 0}
     rotated: 0
     size: {x: 80, y: 100}
     frameSize: {x: 80, y: 100}
     metaData: []
-  - name: playerRun03
+  - name: Lanceur002Cour
     position: {x: 163, y: 1}
     offset: {x: 0, y: 0}
     rotated: 0
     size: {x: 80, y: 100}
     frameSize: {x: 80, y: 100}
     metaData: []
-  - name: playerRun04
+  - name: Lanceur003Cour
+    position: {x: 244, y: 1}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
+    metaData: []
+  - name: Lanceur004Cour
+    position: {x: 325, y: 1}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
+    metaData: []
+  - name: Lanceur005Cour
+    position: {x: 406, y: 1}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
+    metaData: []
+  - name: Lanceur006Cour
     position: {x: 1, y: 102}
     offset: {x: 0, y: 0}
     rotated: 0
     size: {x: 80, y: 100}
     frameSize: {x: 80, y: 100}
     metaData: []
-  - name: playerRun05
+  - name: Lanceur007Cour
     position: {x: 82, y: 102}
     offset: {x: 0, y: 0}
     rotated: 0
     size: {x: 80, y: 100}
     frameSize: {x: 80, y: 100}
     metaData: []
-  - name: playerRun06
+  - name: Lanceur009Lance
     position: {x: 163, y: 102}
     offset: {x: 0, y: 0}
     rotated: 0
     size: {x: 80, y: 100}
     frameSize: {x: 80, y: 100}
     metaData: []
-  - name: playerRun07
-    position: {x: 82, y: 102}
+  - name: Lanceur010Lance
+    position: {x: 244, y: 102}
     offset: {x: 0, y: 0}
     rotated: 0
     size: {x: 80, y: 100}
     frameSize: {x: 80, y: 100}
     metaData: []
-  - name: playerRun08
-    position: {x: 1, y: 102}
+  - name: Lanceur011Lance
+    position: {x: 325, y: 102}
     offset: {x: 0, y: 0}
     rotated: 0
     size: {x: 80, y: 100}
     frameSize: {x: 80, y: 100}
     metaData: []
-  - name: playerRun09
-    position: {x: 163, y: 1}
+  - name: Lanceur012Lance
+    position: {x: 406, y: 102}
     offset: {x: 0, y: 0}
     rotated: 0
     size: {x: 80, y: 100}
     frameSize: {x: 80, y: 100}
     metaData: []
-  - name: playerRun10
-    position: {x: 82, y: 1}
+  - name: Lanceur013Lance
+    position: {x: 1, y: 203}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
+    metaData: []
+  - name: Lanceur014Saut
+    position: {x: 82, y: 203}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
+    metaData: []
+  - name: Lanceur015Saut
+    position: {x: 163, y: 203}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
+    metaData: []
+  - name: Lanceur016Saut
+    position: {x: 244, y: 203}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
+    metaData: []
+  - name: Lanceur017Saut
+    position: {x: 325, y: 203}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
+    metaData: []
+  - name: Lanceur018Saut
+    position: {x: 406, y: 203}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
+    metaData: []
+  - name: Lanceur019Saut
+    position: {x: 1, y: 304}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
+    metaData: []
+  - name: Lanceur020Saut
+    position: {x: 82, y: 304}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 80, y: 100}
+    frameSize: {x: 80, y: 100}
+    metaData: []
+  - name: Lanceur021Saut
+    position: {x: 163, y: 304}
     offset: {x: 0, y: 0}
     rotated: 0
     size: {x: 80, y: 100}
@@ -2183,8 +2443,8 @@ MonoBehaviour:
   metaData: []
   _atlasDataFile: {fileID: 4900000, guid: e74123ddb118a724e95dfdaa45987bf4, type: 3}
   reloadData: 0
-  bytesDataFile: 5584
-  id: 8
+  bytesDataFile: 10677
+  id: 9
 --- !u!1 &910456517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,7 +2471,7 @@ Transform:
   m_GameObject: {fileID: 910456517}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: .99999994, y: .99999994, z: 1}
+  m_LocalScale: {x: .99999994, y: .999999881, z: 1}
   m_Children: []
   m_Father: {fileID: 1630276894}
 --- !u!114 &910456519
@@ -2228,7 +2488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: pop1sprite
   _position: {x: 0, y: 0}
-  _size: {x: .99999994, y: .99999994}
+  _size: {x: .99999994, y: .999999881}
   _rotation: 0
   _pivot: 4
   _pivotPoint: {x: 0, y: 0}
@@ -2251,7 +2511,7 @@ MonoBehaviour:
   protoType: 
   baseName: pop1sprite
   oSize: {x: 1.66666675, y: 2.08333349}
-  imageSize: {x: .99999994, y: .99999994}
+  imageSize: {x: .99999994, y: .999999881}
   _offset: {x: 0, y: 0}
   _baseOffset: {x: 0, y: 0}
   _flipHorizontal: 0
@@ -2264,7 +2524,7 @@ MonoBehaviour:
   _image: {fileID: 0}
   sizeImages: []
   _frameIndex: 0
-  _frameName: playerRun01
+  _frameName: Lanceur000Idle
   _spriteContainer: {fileID: 809646105}
   _containerName: Player
   _newSprite: 0
@@ -2291,7 +2551,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 1662412383}
+  - {fileID: 1514833798}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2304,7 +2564,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 531286650}
   m_GameObject: {fileID: 910456517}
-  m_Mesh: {fileID: 2125540731}
+  m_Mesh: {fileID: 198386528}
 --- !u!1 &931250637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2319,6 +2579,7 @@ GameObject:
   - 54: {fileID: 931250641}
   - 114: {fileID: 931250640}
   - 114: {fileID: 931250639}
+  - 114: {fileID: 931250645}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2351,7 +2612,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteParent: {fileID: 1630276894}
-  playerSprite: {fileID: 910456519}
+  animSprite: {fileID: 0}
+  animation: {fileID: 0}
 --- !u!114 &931250640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2393,12 +2655,22 @@ MonoBehaviour:
   hasShield: 1
   shieldDef: 100
   thisTransform: {fileID: 0}
+  moveVel: 0
+  jumpVel: 16
+  jump2Vel: 14
   rayDistUp: .375
+  animAtlas: {fileID: 0}
   position: {x: 0, y: 0, z: 0}
+  trans: {fileID: 0}
   dialog: {fileID: 0}
+  skillManager: {fileID: 0}
   skill_knife: {fileID: 11400000, guid: 736b7b4e8ecf13249a7dd154367748bd, type: 2}
   skill_axe: {fileID: 11400000, guid: d41fba480116c4942b92a98ac70108cb, type: 2}
   skill_shield: {fileID: 11400000, guid: 24854b585565b97419e637cdeb7c74b2, type: 2}
+  menu: {fileID: 0}
+  hp_display: {fileID: 0}
+  shootingKnife: 0
+  paused: 0
 --- !u!54 &931250641
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2455,6 +2727,51 @@ MeshFilter:
   m_PrefabInternal: {fileID: 531286650}
   m_GameObject: {fileID: 931250637}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &931250645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931250637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beb5229583c4c924dac4053b59ad35c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTeam: 0
+  HP: 0
+  res_phys: 0
+  res_mag: 0
+  isShot: 0
+  talking: 0
+  isGoDown: 0
+  isCrounch: 0
+  isLookup: 0
+  shootLeft: 0
+  facingDir: 0
+  movingDir: 0
+  isLeft: 0
+  isRight: 0
+  isJump: 0
+  isPass: 0
+  jumping: 0
+  grounded: 0
+  passingPlatform: 0
+  onPlatform: 0
+  blockedRight: 0
+  blockedLeft: 0
+  blockedUp: 0
+  blockedDown: 0
+  alive: 1
+  spawnPos: {x: 0, y: 0, z: 0}
+  hasShield: 0
+  shieldDef: 0
+  thisTransform: {fileID: 0}
+  moveVel: 5.98000002
+  jumpVel: 16
+  jump2Vel: 14
+  rayDistUp: .375
+  animAtlas: {fileID: 0}
 --- !u!1 &1002313563
 GameObject:
   m_ObjectHideFlags: 0
@@ -2761,7 +3078,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.size
-      value: 10
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2805,11 +3122,11 @@ Prefab:
       objectReference: {fileID: 4900000, guid: e74123ddb118a724e95dfdaa45987bf4, type: 3}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: _sheetSize.x
-      value: 256
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: _sheetSize.y
-      value: 256
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: texture
@@ -2817,7 +3134,7 @@ Prefab:
       objectReference: {fileID: 2800000, guid: 41118ea5cdb3a624fa5b6c7d0ce3d179, type: 3}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[0].name
-      value: playerRun01
+      value: Lanceur000Idle
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[0].position.x
@@ -2845,7 +3162,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[1].name
-      value: playerRun02
+      value: Lanceur001Cour
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[1].position.x
@@ -2873,7 +3190,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[2].name
-      value: playerRun03
+      value: Lanceur002Cour
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[2].position.x
@@ -2901,15 +3218,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[3].name
-      value: playerRun04
+      value: Lanceur003Cour
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[3].position.x
-      value: 1
+      value: 244
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[3].position.y
-      value: 102
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[3].size.x
@@ -2929,15 +3246,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[4].name
-      value: playerRun05
+      value: Lanceur004Cour
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[4].position.x
-      value: 82
+      value: 325
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[4].position.y
-      value: 102
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[4].size.x
@@ -2957,15 +3274,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[5].name
-      value: playerRun06
+      value: Lanceur005Cour
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[5].position.x
-      value: 163
+      value: 406
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[5].position.y
-      value: 102
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[5].size.x
@@ -2985,11 +3302,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[6].name
-      value: playerRun07
+      value: Lanceur006Cour
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[6].position.x
-      value: 82
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[6].position.y
@@ -3013,11 +3330,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[7].name
-      value: playerRun08
+      value: Lanceur007Cour
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[7].position.x
-      value: 1
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[7].position.y
@@ -3041,7 +3358,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[8].name
-      value: playerRun09
+      value: Lanceur009Lance
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[8].position.x
@@ -3049,7 +3366,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[8].position.y
-      value: 1
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[8].size.x
@@ -3069,15 +3386,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[9].name
-      value: playerRun10
+      value: Lanceur010Lance
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[9].position.x
-      value: 82
+      value: 244
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[9].position.y
-      value: 1
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[9].size.x
@@ -3097,311 +3414,311 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[10].name
-      value: pop00012
+      value: Lanceur011Lance
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[10].position.x
-      value: 345
+      value: 325
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[10].position.y
-      value: 1
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[10].size.x
-      value: -1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[10].size.y
-      value: -1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[10].frameSize.x
-      value: -1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[10].frameSize.y
-      value: -1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[11].name
-      value: pop00013
+      value: Lanceur012Lance
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[11].position.x
-      value: -1841860
+      value: 406
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[11].position.y
-      value: -1842204
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[11].size.x
-      value: 3684409
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[11].size.y
-      value: 3684409
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[11].frameSize.x
-      value: -1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[11].frameSize.y
-      value: -1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[12].name
-      value: pop00014
+      value: Lanceur013Lance
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[12].position.x
-      value: 346
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[12].position.y
-      value: 2
+      value: 203
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[12].size.x
-      value: -3
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[12].size.y
-      value: -3
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[12].frameSize.x
-      value: -1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[12].frameSize.y
-      value: -1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[13].name
-      value: pop00015
+      value: Lanceur014Saut
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[13].position.x
-      value: -986551
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[13].position.y
-      value: -986895
+      value: 203
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[13].size.x
-      value: 1973791
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[13].size.y
-      value: 1973791
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[13].frameSize.x
-      value: -1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[13].frameSize.y
-      value: -1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[14].name
-      value: pop00016
+      value: Lanceur015Saut
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[14].position.x
-      value: 345
+      value: 163
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[14].position.y
-      value: 1
+      value: 203
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[14].size.x
-      value: -1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[14].size.y
-      value: -1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[14].frameSize.x
-      value: -1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[14].frameSize.y
-      value: -1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[15].name
-      value: pop00017
+      value: Lanceur016Saut
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[15].position.x
-      value: 345
+      value: 244
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[15].position.y
-      value: 1
+      value: 203
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[15].size.x
-      value: -1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[15].size.y
-      value: -1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[15].frameSize.x
-      value: -1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[15].frameSize.y
-      value: -1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[16].name
-      value: pop00018
+      value: Lanceur017Saut
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[16].position.x
-      value: 345
+      value: 325
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[16].position.y
-      value: 1
+      value: 203
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[16].size.x
-      value: -1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[16].size.y
-      value: -1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[16].frameSize.x
-      value: -1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[16].frameSize.y
-      value: -1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[17].name
-      value: pop00019
+      value: Lanceur018Saut
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[17].position.x
-      value: 345
+      value: 406
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[17].position.y
-      value: 1
+      value: 203
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[17].size.x
-      value: -1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[17].size.y
-      value: -1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[17].frameSize.x
-      value: -1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[17].frameSize.y
-      value: -1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[18].name
-      value: pop00020
+      value: Lanceur019Saut
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[18].position.x
-      value: -1052344
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[18].position.y
-      value: -1052688
+      value: 304
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[18].size.x
-      value: 2105377
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[18].size.y
-      value: 2105377
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[18].frameSize.x
-      value: -1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[18].frameSize.y
-      value: -1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[19].name
-      value: pop00021
+      value: Lanceur020Saut
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[19].position.x
-      value: 346
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[19].position.y
-      value: 2
+      value: 304
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[19].size.x
-      value: -3
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[19].size.y
-      value: -3
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[19].frameSize.x
-      value: -1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[19].frameSize.y
-      value: -1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[20].name
-      value: pop00022
+      value: Lanceur021Saut
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[20].position.x
-      value: -1052344
+      value: 163
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[20].position.y
-      value: -1052688
+      value: 304
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[20].size.x
-      value: 2105377
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[20].size.y
-      value: 2105377
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[20].frameSize.x
-      value: -1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[20].frameSize.y
-      value: -1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: atlasData.Array.data[21].name
@@ -4185,11 +4502,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: bytesDataFile
-      value: 5584
+      value: 10677
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: id
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
@@ -4252,6 +4569,144 @@ Transform:
   m_Children:
   - {fileID: 2095339850}
   m_Father: {fileID: 1728906262}
+--- !u!43 &1407382572
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: .5, y: .5, z: 0}
+  m_Shapes: []
+  m_ShapeVertices: []
+  m_MeshCompression: 0
+  m_StreamCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 000001000200020003000000
+  m_Skin: []
+  m_BindPose: []
+  m_VertexData:
+    m_CurrentChannels: 15
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 2
+      dimension: 1
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_Streams:
+    - channelMask: 15
+      offset: 0
+      stride: 36
+      dividerOp: 0
+      frequency: 0
+    - channelMask: 0
+      offset: 0
+      stride: 0
+      dividerOp: 0
+      frequency: 0
+    - channelMask: 0
+      offset: 0
+      stride: 0
+      dividerOp: 0
+      frequency: 0
+    - channelMask: 0
+      offset: 0
+      stride: 0
+      dividerOp: 0
+      frequency: 0
+    m_DataSize: 144
+    _typelessdata: 000000bf0000003f000000000000000000000000000080bfffffffff0000a23e00807f3f0000003f0000003f000000000000000000000000000080bfffffffff0000803b00807f3f0000003f000000bf000000000000000000000000000080bfffffffff0000803b00804d3f000000bf000000bf000000000000000000000000000080bfffffffff0000a23e00804d3f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BindPoses:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Colors:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: .5, y: .5, z: 0}
+  m_MeshUsageFlags: 0
+  m_MeshOptimized: 0
 --- !u!1001 &1498117967
 Prefab:
   m_ObjectHideFlags: 0
@@ -4492,34 +4947,7 @@ Prefab:
   m_RootGameObject: {fileID: 302936511}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &1630276893
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100002, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
-  m_PrefabInternal: {fileID: 531286650}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1630276894}
-  m_Layer: 0
-  m_Name: Sprite Parent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1630276894
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400004, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
-  m_PrefabInternal: {fileID: 531286650}
-  m_GameObject: {fileID: 1630276893}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 910456518}
-  m_Father: {fileID: 931250638}
---- !u!21 &1662412383
+--- !u!21 &1514833798
 Material:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -4556,6 +4984,70 @@ Material:
         first:
           name: _EmisColor
         second: {r: .200000003, g: .200000003, b: .200000003, a: 0}
+--- !u!21 &1588375685
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: OTMaterial-transparent
+  m_Shader: {fileID: 10721, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: []
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 60b7285f54e160b4e9f131ee88f8e5df, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: .5, g: .5, b: .5, a: .5}
+      data:
+        first:
+          name: _EmisColor
+        second: {r: .200000003, g: .200000003, b: .200000003, a: 0}
+--- !u!1 &1630276893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
+  m_PrefabInternal: {fileID: 531286650}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1630276894}
+  m_Layer: 0
+  m_Name: Sprite Parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1630276894
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 315b46d2e3b941345b3a7fdc002ff055, type: 2}
+  m_PrefabInternal: {fileID: 531286650}
+  m_GameObject: {fileID: 1630276893}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 910456518}
+  m_Father: {fileID: 931250638}
 --- !u!1 &1681637137
 GameObject:
   m_ObjectHideFlags: 0
@@ -4671,7 +5163,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteParent: {fileID: 1210140737}
-  playerSprite: {fileID: 2095339851}
+  animSprite: {fileID: 0}
+  animation: {fileID: 0}
 --- !u!114 &1728906264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4713,9 +5206,14 @@ MonoBehaviour:
   hasShield: 0
   shieldDef: 0
   thisTransform: {fileID: 0}
+  moveVel: 4
+  jumpVel: 16
+  jump2Vel: 14
   rayDistUp: .375
+  animAtlas: {fileID: 0}
   targetDetectionArea: 3
   blockDetectionArea: 1
+  waypoints: []
 --- !u!54 &1728906265
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4839,43 +5337,6 @@ Transform:
   m_Children:
   - {fileID: 1728906262}
   m_Father: {fileID: 468250602}
---- !u!21 &1930873430
-Material:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: OTMaterial-transparent
-  m_Shader: {fileID: 10721, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: []
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-      data:
-        first:
-          name: _MainTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 60b7285f54e160b4e9f131ee88f8e5df, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats:
-      data:
-        first:
-          name: _InvFade
-        second: 1
-    m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _TintColor
-        second: {r: .5, g: .5, b: .5, a: .5}
-      data:
-        first:
-          name: _EmisColor
-        second: {r: .200000003, g: .200000003, b: .200000003, a: 0}
 --- !u!1 &1940305842
 GameObject:
   m_ObjectHideFlags: 0
@@ -4906,6 +5367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 1040376823}
   instructionsText: {fileID: 1002313565}
+  HPTxt: {fileID: 0}
 --- !u!4 &1940305844
 Transform:
   m_ObjectHideFlags: 0
@@ -4957,6 +5419,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   background: {fileID: 0}
+  player: {fileID: 0}
+  camera: {fileID: 0}
+  waypoint1: {fileID: 0}
+  waypoint2: {fileID: 0}
   ID: 2
   nextLvlID: 1
   previousLvlID: 3
@@ -4985,8 +5451,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2095339849}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.68322305e-08, y: 0, z: -1}
-  m_LocalScale: {x: 1.00000024, y: .999999762, z: 1}
+  m_LocalPosition: {x: -1.77635684e-15, y: 0, z: -1}
+  m_LocalScale: {x: .952381194, y: .909090698, z: 1}
   m_Children: []
   m_Father: {fileID: 1210140737}
 --- !u!114 &2095339851
@@ -5003,7 +5469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: zombieSprite
   _position: {x: 1.7029901e-08, y: 0}
-  _size: {x: 1.00000024, y: .999999762}
+  _size: {x: .952381194, y: .909090698}
   _rotation: 0
   _pivot: 4
   _pivotPoint: {x: 0, y: 0}
@@ -5025,10 +5491,10 @@ MonoBehaviour:
     height: 0
   protoType: 
   baseName: zombieSprite
-  oSize: {x: 1.75, y: 2.29166675}
-  imageSize: {x: 1.00000024, y: .999999762}
-  _offset: {x: 2.98023295e-08, y: 0}
-  _baseOffset: {x: 2.98023295e-08, y: 0}
+  oSize: {x: 1.66666675, y: 2.08333349}
+  imageSize: {x: .952381194, y: .909090698}
+  _offset: {x: -1.70299028e-08, y: 0}
+  _baseOffset: {x: -1.70299028e-08, y: 0}
   _flipHorizontal: 1
   _flipVertical: 0
   _transparent: 1
@@ -5039,7 +5505,7 @@ MonoBehaviour:
   _image: {fileID: 0}
   sizeImages: []
   _frameIndex: 0
-  _frameName: zombie1_03
+  _frameName: zombie0001
   _spriteContainer: {fileID: 45609918}
   _containerName: Zombie
   _newSprite: 0
@@ -5066,7 +5532,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 1930873430}
+  - {fileID: 1588375685}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -5079,142 +5545,4 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2095339849}
-  m_Mesh: {fileID: 769118914}
---- !u!43 &2125540731
-Mesh:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  serializedVersion: 8
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 6
-    topology: 0
-    firstVertex: 0
-    vertexCount: 4
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: .5, y: .5, z: 0}
-  m_Shapes: []
-  m_ShapeVertices: []
-  m_MeshCompression: 0
-  m_StreamCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexBuffer: 000001000200020003000000
-  m_Skin: []
-  m_BindPose: []
-  m_VertexData:
-    m_CurrentChannels: 15
-    m_VertexCount: 4
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 24
-      format: 2
-      dimension: 1
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_Streams:
-    - channelMask: 15
-      offset: 0
-      stride: 36
-      dividerOp: 0
-      frequency: 0
-    - channelMask: 0
-      offset: 0
-      stride: 0
-      dividerOp: 0
-      frequency: 0
-    - channelMask: 0
-      offset: 0
-      stride: 0
-      dividerOp: 0
-      frequency: 0
-    - channelMask: 0
-      offset: 0
-      stride: 0
-      dividerOp: 0
-      frequency: 0
-    m_DataSize: 144
-    _typelessdata: 000000bf0000003f000000000000000000000000000080bfffffffff0000803b00007f3f0000003f0000003f000000000000000000000000000080bfffffffff0000a23e00007f3f0000003f000000bf000000000000000000000000000080bfffffffff0000a23e00001b3f000000bf000000bf000000000000000000000000000080bfffffffff0000803b00001b3f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BindPoses:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Colors:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: .5, y: .5, z: 0}
-  m_MeshUsageFlags: 0
-  m_MeshOptimized: 0
+  m_Mesh: {fileID: 1407382572}

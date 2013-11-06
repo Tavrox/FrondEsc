@@ -87,7 +87,7 @@
             <key>basic</key>
             <struct type="AlgorithmBasicSettings">
                 <key>sortBy</key>
-                <enum type="AlgorithmBasicSettings::SortBy">Best</enum>
+                <enum type="AlgorithmBasicSettings::SortBy">Name</enum>
                 <key>order</key>
                 <enum type="AlgorithmBasicSettings::Order">Ascending</enum>
             </struct>
@@ -154,6 +154,12 @@
             <filename>nextdoor.png</filename>
             <filename>lever.png</filename>
             <filename>healthpotion.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/triggDoor_0000_Layer-4.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/triggDoor_0001_Layer-4.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/triggDoor_0002_Layer-4.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/triggDoor_0003_Layer-4.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/triggDoor_0004_Layer-4.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/triggDoor_0005_Layer-4.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

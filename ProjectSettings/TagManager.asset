@@ -6,18 +6,11 @@ TagManager:
   - 
   - Enemy
   - Bullets
-  - Weapons
-  - Skills
-  - Boxes
-  - Zombie
+  - Blocking
   - Platforms
   - Ground
-  - SkillManager
+  - Collectible
   - AudioManager
-  - 
-  - 
-  - 
-  - boxes
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

@@ -4,16 +4,21 @@ using System.Collections;
 public class LevelManager : MonoBehaviour {
 	
 	public OTSprite background;
-	public Player player;
-	public Camera camera;
+	[SerializeField] private Player player;
+	[SerializeField] private Camera camera;
+	public Waypoints waypoint1;
+	public Waypoints waypoint2;
 	
 	public int ID;
 	public int nextLvlID;
 	public int previousLvlID;
 
 	// Use this for initialization
-	void Start () {
-	
+	void Start () 
+	{
+		player = GameObject.FindWithTag("Player").GetComponent<Player>();
+//		camera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
+		
 	}
 	
 	// Update is called once per frame

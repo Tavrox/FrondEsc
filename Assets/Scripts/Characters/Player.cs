@@ -9,13 +9,12 @@ public class Player : Character {
 	[HideInInspector] public Dialog dialog;
 	//public Skill skillLaunch;
 	
-	public SkillManager skillManager;
 	public Skills skill_knife;
 	public Skills skill_axe;
 	public Skills skill_shield;
 	public OTSprite menu;
 	
-	public GUIText hp_display;
+	[SerializeField] private Rect hp_display;
 	
 	public bool shootingKnife;
 	[HideInInspector] public bool paused = false;
@@ -109,7 +108,8 @@ public class Player : Character {
 			}
 		}
 		
-		print ("Check Shield" + hasShield);
+		Debug.Log ("Player_Shield" + hasShield);
+		Debug.Log ("Player_HP" + HP);
 		
 		UpdateMovement();
 	}
@@ -145,5 +145,14 @@ public class Player : Character {
 	{
 		paused = false;
 		enabled = true;	
+	}
+	public void RegenHP(int _val)
+	{
+		this.HP += _val;
+		
+	}
+	private void DisplayHP()
+	{
+		
 	}
 }

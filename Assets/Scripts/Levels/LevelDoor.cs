@@ -32,4 +32,5 @@ public class LevelDoor : MonoBehaviour {
 	private void PreviousLevel () {
 		Application.LoadLevel(lvlManager.previousLvlID);
 	}
+	
 }
