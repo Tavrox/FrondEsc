@@ -15,6 +15,4 @@ public class SpeakingElement : MonoBehaviour
 	public float TextPlayBackSpeed;
 	public AudioClip PlayBackSoundFile;
 	
-	
-	
 }

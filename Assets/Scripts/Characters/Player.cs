@@ -45,9 +45,9 @@ public class Player : Character {
 		isJump = false;
 		isGoDown = false;
 		isPass = false;
+		isCrounch = false;
 		
 		shootingKnife = false;
-		//System.Console.WriteLine("test");
 		movingDir = moving.None;
 		
 		// keyboard input
@@ -66,14 +66,13 @@ public class Player : Character {
 		}
 		if (Input.GetKey(KeyCode.DownArrow))
 		{
-			isGoDown = true;
+			isCrounch = true;
 			facingDir = facing.Down;
 		}
 		if (Input.GetKeyDown("up")) 
 		{ 
 			isJump = true; 
 		}
-		
 		if(Input.GetKeyDown("space"))
 		{
 			isPass = true;
@@ -107,7 +106,6 @@ public class Player : Character {
 				GameEventManager.TriggerGameUnpause();
 			}
 		}
-		
 		Debug.Log ("Player_Shield" + hasShield);
 		Debug.Log ("Player_HP" + HP);
 		

@@ -85,7 +85,7 @@ public class Skills : MonoBehaviour {
 	{
 		if (sk == SkillList.Knife)
 		{
-			
+			MasterAudio.PlaySound("Player_knife_1");
 		}
 		else if (sk == SkillList.Axe)
 		{

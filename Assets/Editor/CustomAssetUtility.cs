@@ -22,13 +22,10 @@ public class CustomAssetUtility : MonoBehaviour {
         }
 
         string assetPathAndName = AssetDatabase.GenerateUniqueAssetPath (path + "/New " + typeof(T).ToString() + ".asset");
-
         AssetDatabase.CreateAsset (asset, assetPathAndName);
-
         AssetDatabase.SaveAssets ();
         EditorUtility.FocusProjectWindow ();
         Selection.activeObject = asset;
-	
 	}
 	
 }

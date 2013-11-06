@@ -49,6 +49,7 @@ public class Character : MonoBehaviour
 	
 	private Vector3 vectorFixed;
 	protected Vector3 vectorMove;
+	private Vector3 mypos;
 	
 	[Range (0,10)] 	public float 	moveVel = 4f;
 	[Range (0,30)] 	public float 	jumpVel = 16f;
@@ -63,16 +64,9 @@ public class Character : MonoBehaviour
 	private RaycastHit hitInfo;
 	private float halfMyX;
 	private float halfMyY;
-	private double doubleTo;
-	[HideInInspector] public float rayDistUp = 0.375f;
 	
 	private float absVel2X;
 	private float absVel2Y;
-	
-//	private float rayDistanceUp = 0.25f;
-	private float rayDistanceDown = 1.2f;
-//	private float absoluteVectorFixedX;
-	private float absoluteVectorFixedY = 0f;
 	
 	// layer masks
 	protected int groundMask = 1 << 8; // Ground, Block
@@ -105,6 +99,7 @@ public class Character : MonoBehaviour
 	// Update is called once per frame
 	public virtual void UpdateMovement() 
 	{
+		mypos = new Vector3(thisTransform.position.x,thisTransform.position.y,thisTransform.position.z);
 		
 		if(alive == false) return;
 		
@@ -181,50 +176,50 @@ public class Character : MonoBehaviour
 		absVel2X = Mathf.Abs(vectorFixed.x);
 		absVel2Y = Mathf.Abs(vectorFixed.y);
 		
-		if (Physics.Raycast(new Vector3(thisTransform.position.x,thisTransform.position.y,thisTransform.position.z), -Vector3.up, out hitInfo, rayDistanceDown + absoluteVectorFixedY, groundMask))
-		{
-			BlockedDown();
-			if (isGoDown == true)
-			{
-				isCrounch = true;
-			}
-			Debug.DrawLine (thisTransform.position, hitInfo.point, Color.green);
-		}
 		
-		if (Physics.Raycast(new Vector3(thisTransform.position.x,thisTransform.position.y,thisTransform.position.z), Vector3.up, out hitInfo, rayDistanceDown +absoluteVectorFixedY, platformMask)
-		|| Physics.Raycast(new Vector3(thisTransform.position.x,thisTransform.position.y,thisTransform.position.z), Vector3.up, out hitInfo, rayDistanceDown + absoluteVectorFixedY, platformMask))
+		//BLOCKED TO DOWN
+		if (Physics.Raycast(mypos, Vector3.down, out hitInfo, halfMyY, platformMask))
 		{
-			if (isGoDown == true)
+			Debug.DrawLine (thisTransform.position, hitInfo.point, Color.black);
+			if (isCrounch == true)
 			{
 				passingPlatform = true;
 				ThroughPlatform();
 			}
-			else
+			else 
 			{
-				BlockedDown();
+				BlockedDown();	
 			}
+		}
+		if (Physics.Raycast(mypos, Vector3.down, out hitInfo, halfMyY, groundMask))
+		{
+			BlockedDown();
+		}
+		
+		
+		// BLOCKED TO UP
+		if (Physics.Raycast(mypos, Vector3.up, out hitInfo, halfMyY, groundMask))
+		{
+			BlockedUp();
 			Debug.DrawLine (thisTransform.position, hitInfo.point, Color.red);
 		}
 		
-		// blocked up
-		if (Physics.Raycast(new Vector3(thisTransform.position.x-0.2f,thisTransform.position.y,thisTransform.position.z), Vector3.up, out hitInfo, rayDistUp+absVel2Y, groundMask)
-			|| Physics.Raycast(new Vector3(thisTransform.position.x+0.2f,thisTransform.position.y,thisTransform.position.z), Vector3.up, out hitInfo, rayDistUp+absVel2Y, groundMask))
-		{
-			BlockedUp();
-		}
-		
-		// blocked on right
-		if (Physics.Raycast(new Vector3(thisTransform.position.x,thisTransform.position.y,thisTransform.position.z), Vector3.right, out hitInfo, halfMyX+absVel2X, groundMask))
+		// Blocked on right
+		if( Physics.Raycast(mypos, Vector3.right, out hitInfo, halfMyX, groundMask) 
+			|| Physics.Raycast(mypos, new Vector3(1f,0.8f,0) , out hitInfo, halfMyX, groundMask)
+			|| Physics.Raycast(mypos, new Vector3(1f,-0.8f,0), out hitInfo, halfMyX, groundMask))
 		{
 			BlockedRight();
-			Debug.DrawRay(new Vector3(thisTransform.position.x,thisTransform.position.y,thisTransform.position.z), Vector3.right, Color.cyan);
+			Debug.DrawRay(mypos, Vector3.right, Color.cyan);
 		}
 		
-		// blocked on left
-		if(Physics.Raycast(new Vector3(thisTransform.position.x,thisTransform.position.y,thisTransform.position.z), Vector3.left, out hitInfo, halfMyX+absVel2X, groundMask))
+		// Blocked on left
+		if(	Physics.Raycast(mypos, Vector3.left, out hitInfo, halfMyX, groundMask)
+			|| Physics.Raycast(mypos, new Vector3(-1f,0.8f,0), out hitInfo, halfMyX, groundMask)
+			|| Physics.Raycast(mypos, new Vector3(-1f,0.8f,0), out hitInfo, halfMyX, groundMask))
 		{
 			BlockedLeft();
-			Debug.DrawRay(new Vector3(thisTransform.position.x,thisTransform.position.y,thisTransform.position.z), Vector3.left, Color.cyan);
+			Debug.DrawRay(mypos, Vector3.left, Color.yellow);
 		}
 	}
 	
@@ -243,12 +238,12 @@ public class Character : MonoBehaviour
 			grounded = true;
 			isJump = false;
 			vectorMove.y = 0f;
-			thisTransform.position = new Vector3(thisTransform.position.x, hitInfo.point.y + halfMyY, 0f);
+			thisTransform.position = new Vector3(thisTransform.position.x, hitInfo.point.y + halfMyY - 0.1f, thisTransform.position.z);
 		}
 	}
 	void BlockedRight()
 	{
-		if(grounded && facingDir == facing.Right || movingDir == moving.Right)
+		if(facingDir == facing.Right || movingDir == moving.Right)
 		{
 			blockedRight = true;
 			vectorMove.x = 0f;
@@ -259,7 +254,7 @@ public class Character : MonoBehaviour
 	
 	void BlockedLeft()
 	{
-		if(grounded && facingDir == facing.Left || movingDir == moving.Left)
+		if(facingDir == facing.Left || movingDir == moving.Left)
 		{
 			blockedLeft = true;
 			vectorMove.x = 0f;

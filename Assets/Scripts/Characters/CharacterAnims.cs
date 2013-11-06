@@ -31,13 +31,13 @@ public class CharacterAnims : MonoBehaviour
 		{
 			currentAnim = anim.WalkLeft;
 			animSprite.Play("run");
-			spriteParent.localScale = new Vector3(-1,1,1);
+			InvertSprite();
 		}
 		if(!_character.isLeft && _character.grounded == true && currentAnim != anim.StandLeft && _character.facingDir == Character.facing.Left && animPlaying == false)
 		{
 			currentAnim = anim.StandLeft;
 			animSprite.Play("stand"); // stand left
-			spriteParent.localScale = new Vector3(-1,1,1);
+			InvertSprite();
 		}
 		
 		// run right
@@ -45,13 +45,13 @@ public class CharacterAnims : MonoBehaviour
 		{
 			currentAnim = anim.WalkRight;
 			animSprite.Play("run");
-			spriteParent.localScale = new Vector3(1,1,1);
+			NormalScaleSprite();;
 		}
 		if(!_character.isRight && _character.grounded && currentAnim != anim.StandRight && _character.facingDir == Character.facing.Right && animPlaying == false)
 		{
 			currentAnim = anim.StandRight;
 			animSprite.Play("stand"); // stand left
-			spriteParent.localScale = new Vector3(1,1,1);
+			NormalScaleSprite();
 		}
 		
 		// falling
@@ -59,13 +59,13 @@ public class CharacterAnims : MonoBehaviour
 		{
 			currentAnim = anim.FallLeft;
 			animSprite.Play("jump"); // fall left
-			spriteParent.localScale = new Vector3(-1,1,1);
+			InvertSprite();
 		}
 		if(_character.grounded == false && currentAnim != anim.FallRight && _character.facingDir == Character.facing.Right)
 		{
 			currentAnim = anim.FallRight;
 			animSprite.Play("jump"); // fall right
-			spriteParent.localScale = new Vector3(1,1,1);
+			NormalScaleSprite();
 		}
 		
 		// PLAYER SPECIFIC ANIMS
@@ -75,12 +75,12 @@ public class CharacterAnims : MonoBehaviour
 			animPlaying = true;
 			currentAnim = anim.ShootRight;
 			animSprite.Play("throw_knife");
-			spriteParent.localScale = new Vector3(1,1,1);
+			NormalScaleSprite();
 			StartCoroutine( WaitAndCallback( animation.GetDuration(animation.framesets[3]) ) );
 		}
 		
 		//ENEMIES SPECIFIC ANIMS
-		if (_character.isShot == true)
+		if (_character.isShot == true && _character.facingDir == Character.facing.Left)
 		{
 			animPlaying = true;
 			animSprite.Play("hurt");
@@ -103,5 +103,14 @@ public class CharacterAnims : MonoBehaviour
 	void AnimationFinished()
 	{
 	    animPlaying = false;
+	}
+	
+	private void InvertSprite()
+	{
+		spriteParent.localScale = new Vector3(-1,1,1);
+	}
+	private void NormalScaleSprite()
+	{
+		spriteParent.localScale = new Vector3(1,1,1);
 	}
 }

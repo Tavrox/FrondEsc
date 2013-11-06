@@ -4,6 +4,7 @@ using System.Collections;
 public class TriggeredDoor : MonoBehaviour {
 	
 	public OTAnimatingSprite animSprite;
+	private bool isLocked = true ;
 
 	// Use this for initialization
 	void Start () {
@@ -15,11 +16,18 @@ public class TriggeredDoor : MonoBehaviour {
 	
 	}
 	
-	public void Unlock()
+	public bool Unlock()
 	{
-		animSprite.Play("unlock");
-		Destroy(collider);
-//		collider.transform.localScale = new Vector3(0.2f,0.2f,1f);
-		
+		if (isLocked == true)
+		{
+			animSprite.Play("unlock");
+			isLocked = false;
+			Destroy(collider);
+			return true;
+		}
+		else
+		{
+			return false;			
+		}
 	}
 }
