@@ -47,7 +47,7 @@ public class Character : MonoBehaviour
 	
 	[HideInInspector] public Transform thisTransform;
 	
-	private Vector3 vectorFixed;
+	[HideInInspector] public Vector3 vectorFixed;
 	protected Vector3 vectorMove;
 	private Vector3 mypos;
 	

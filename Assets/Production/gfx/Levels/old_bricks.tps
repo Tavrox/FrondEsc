@@ -22,7 +22,7 @@
         <key>dataFormat</key>
         <string>cocos2d</string>
         <key>textureFileName</key>
-        <filename>bricks.png</filename>
+        <filename>../../../GFX/levels/ldbricks.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -99,7 +99,7 @@
             <key>packageName</key>
             <string>Texture</string>
             <key>javaFileName</key>
-            <filename>bricks.java</filename>
+            <filename>../scenery/scenery.java</filename>
             <key>wrap</key>
             <struct type="AndEngineWrap">
                 <key>s</key>
@@ -111,7 +111,7 @@
             <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
         <key>dataFileName</key>
-        <filename>bricks.xml</filename>
+        <filename>../../../GFX/levels/ldbricks.xml</filename>
         <key>multiPack</key>
         <false/>
         <key>mainExtension</key>
@@ -149,17 +149,17 @@
         <key>fileList</key>
         <array>
             <filename>crate.png</filename>
-            <filename>healthpotion.png</filename>
-            <filename>lever.png</filename>
-            <filename>nextdoor.png</filename>
             <filename>platform.png</filename>
             <filename>previousdoor.png</filename>
-            <filename>triggDoor_0000_Layer-4.png</filename>
-            <filename>triggDoor_0001_Layer-4.png</filename>
-            <filename>triggDoor_0002_Layer-4.png</filename>
-            <filename>triggDoor_0003_Layer-4.png</filename>
-            <filename>triggDoor_0004_Layer-4.png</filename>
-            <filename>triggDoor_0005_Layer-4.png</filename>
+            <filename>nextdoor.png</filename>
+            <filename>lever.png</filename>
+            <filename>healthpotion.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/triggDoor_0000_Layer-4.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/triggDoor_0001_Layer-4.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/triggDoor_0002_Layer-4.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/triggDoor_0003_Layer-4.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/triggDoor_0004_Layer-4.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/triggDoor_0005_Layer-4.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
