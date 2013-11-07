@@ -22,7 +22,7 @@
         <key>dataFormat</key>
         <string>cocos2d</string>
         <key>textureFileName</key>
-        <filename>skill.png</filename>
+        <filename>../../../GFX/skills/skill.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -111,7 +111,7 @@
             <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
         <key>dataFileName</key>
-        <filename>skill.xml</filename>
+        <filename>../../../GFX/skills/skill.xml</filename>
         <key>multiPack</key>
         <false/>
         <key>mainExtension</key>
@@ -148,12 +148,10 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>04_knife_chooser.png</filename>
-            <filename>05_axe_chooser.png</filename>
-            <filename>06_shield_chooser.png</filename>
-            <filename>01_knife.png</filename>
-            <filename>02_axe.png</filename>
-            <filename>03_shield.png</filename>
+            <filename>Couteau0000.png</filename>
+            <filename>Hache0001.png</filename>
+            <filename>Hache0002.png</filename>
+            <filename>Shield0003.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

@@ -5,7 +5,7 @@ public enum MyTeam { Team1, Team2, None }
 
 public class Character : MonoBehaviour 
 {
-	public OTAnimatingSprite sprite;
+	public OTAnimation anim;
 
 	/** ADD **/
 	public int HP, res_phys, res_mag;
@@ -57,16 +57,16 @@ public class Character : MonoBehaviour
 	[Range (1,2)] 	public int 		maxJumps = 2;
 	[Range (15,25)] public float 	fallVel = 18f;
 	
-	private int jumps = 0;
-	private float gravityY;
-	private float maxVelY = 0f;
+	[SerializeField] private int jumps = 0;
+	[SerializeField] private float gravityY;
+	[SerializeField] private float maxVelY = 0f;
 		
-	private RaycastHit hitInfo;
-	private float halfMyX;
-	private float halfMyY;
+	[SerializeField] private RaycastHit hitInfo;
+	[SerializeField] private float halfMyX;
+	[SerializeField] private float halfMyY;
 	
-	private float absVel2X;
-	private float absVel2Y;
+	[SerializeField] private float absVel2X;
+	[SerializeField] private float absVel2Y;
 	
 	// layer masks
 	protected int groundMask = 1 << 8; // Ground, Block

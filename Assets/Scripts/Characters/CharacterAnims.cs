@@ -70,7 +70,15 @@ public class CharacterAnims : MonoBehaviour
 		
 		// PLAYER SPECIFIC ANIMS
 		// Shooting
-		if (_player.shootingKnife == true)
+		if (_player.shootingKnife == true  && _character.facingDir == Character.facing.Left)
+		{
+			animPlaying = true;
+			currentAnim = anim.ShootRight;
+			animSprite.Play("throw_knife");
+			InvertSprite();
+			StartCoroutine( WaitAndCallback( animation.GetDuration(animation.framesets[3]) ) );
+		}
+		if (_player.shootingKnife == true && _character.facingDir == Character.facing.Right)
 		{
 			animPlaying = true;
 			currentAnim = anim.ShootRight;
@@ -85,6 +93,14 @@ public class CharacterAnims : MonoBehaviour
 			animPlaying = true;
 			animSprite.Play("hurt");
 			StartCoroutine( WaitAndCallback( animation.GetDuration(animation.framesets[2]) ) );
+			InvertSprite();
+		}
+		if (_character.isShot == true && _character.facingDir == Character.facing.Right)
+		{
+			animPlaying = true;
+			animSprite.Play("hurt");
+			StartCoroutine( WaitAndCallback( animation.GetDuration(animation.framesets[2]) ) );
+			NormalScaleSprite();
 		}
 		
 		if (_player.paused == true)

@@ -40,7 +40,7 @@
             </struct>
         </struct>
         <key>shapePadding</key>
-        <uint>1</uint>
+        <uint>0</uint>
         <key>jpgQuality</key>
         <uint>80</uint>
         <key>pngOptimizationLevel</key>
@@ -50,7 +50,7 @@
         <key>textureFormat</key>
         <enum type="SettingsBase::TextureFormat">png</enum>
         <key>borderPadding</key>
-        <uint>1</uint>
+        <uint>0</uint>
         <key>maxTextureSize</key>
         <QSize>
             <key>width</key>
@@ -148,6 +148,56 @@
         </struct>
         <key>fileList</key>
         <array>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur017Saut.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur018Saut.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur019Saut.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur020Saut.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/LanceurCourIdle.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player00Idle.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player01Run.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player02Run.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player03Run.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player04Run.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player05Run.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player06Run.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player08Jump.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player09Jump.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player10Jump.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player11Jump.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player12Jump.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player13Jump.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player14Jump.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player15Jump.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player16Attack.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player17Attack.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player18Attack.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player19JumpAttack.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player20JumpAttack.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player21JumpAttack.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player22Crounch.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player23Crounch.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player24Crounch.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player25Idle.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player26Crounch.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player27Crounch.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player28CrounchAttack.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player29CrounchAttack.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player30AxeCrounch.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player31AxeCrounch.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player32AxeCrounch.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player33AxeJump.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player34AxeJump.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player35AxeIdle.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player36AxeIdle.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player37Death.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player38Death.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player39Death.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player40Death.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Player41Death.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur000Idle.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur001Cour.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur002Cour.png</filename>
+            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur003Cour.png</filename>
             <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur004Cour.png</filename>
             <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur005Cour.png</filename>
             <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur006Cour.png</filename>
@@ -161,14 +211,6 @@
             <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur014Saut.png</filename>
             <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur015Saut.png</filename>
             <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur016Saut.png</filename>
-            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur017Saut.png</filename>
-            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur018Saut.png</filename>
-            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur019Saut.png</filename>
-            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur020Saut.png</filename>
-            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur000Idle.png</filename>
-            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur001Cour.png</filename>
-            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur002Cour.png</filename>
-            <filename>C:/Users/Tav/Google Drive/Workspace/4Edges/Projets/EnProd/FrondEscrim/GFX/Caracter/Lanceur003Cour.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

@@ -15,6 +15,8 @@ public class Player : Character {
 	public OTSprite menu;
 	
 	[SerializeField] private Rect hp_display;
+	[SerializeField] private SoundSprite soundMan;
+	public OTAnimatingSprite currSprite;
 	
 	public bool shootingKnife;
 	[HideInInspector] public bool paused = false;
@@ -32,13 +34,13 @@ public class Player : Character {
 		enabled = false;
 		hasShield = false;
 		spawnPos = thisTransform.position;
+		soundMan = GetComponent<SoundSprite>();
 		//dialog = GameObject.Find("Dialog").GetComponent<Dialog>();
 	}
 	
 	// Update is called once per frame
 	public void Update () 
 	{
-		
 		// these are false unless one of keys is pressed
 		isLeft = false;
 		isRight = false;
@@ -53,13 +55,14 @@ public class Player : Character {
 		// keyboard input
 		if(Input.GetKey("left")) 
 		{ 
-			//Debug.Log("left");
+			soundMan.OnWalking(getCurrentFrameIndex());
 			isLeft = true;
 			shootLeft = true;
 			facingDir = facing.Left;
 		}
 		if (Input.GetKey("right") && isLeft == false) 
 		{ 
+			soundMan.OnWalking(getCurrentFrameIndex());
 			isRight = true; 
 			facingDir = facing.Right;
 			shootLeft = false;
@@ -152,5 +155,13 @@ public class Player : Character {
 	private void DisplayHP()
 	{
 		
+	}
+	public OTAnimatingSprite getSprite()
+	{
+		return currSprite;
+	}
+	public int getCurrentFrameIndex()
+	{
+		return currSprite.CurrentFrame().index;
 	}
 }

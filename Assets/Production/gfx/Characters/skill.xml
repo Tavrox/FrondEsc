@@ -4,36 +4,49 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>01_knife.png</key>
+            <key>Couteau0000.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,1},{64,16}}</string>
+                <string>{{1,1},{18,5}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{64,16}}</string>
+                <string>{{0,0},{18,5}}</string>
                 <key>sourceSize</key>
-                <string>{64,16}</string>
+                <string>{18,5}</string>
             </dict>
-            <key>02_axe.png</key>
+            <key>Hache0001.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{66,1},{40,60}}</string>
+                <string>{{20,1},{60,60}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{40,60}}</string>
+                <string>{{0,0},{60,60}}</string>
                 <key>sourceSize</key>
-                <string>{40,60}</string>
+                <string>{60,60}</string>
             </dict>
-            <key>03_shield.png</key>
+            <key>Hache0002.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{107,1},{120,120}}</string>
+                <string>{{1,62},{60,60}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{60,60}}</string>
+                <key>sourceSize</key>
+                <string>{60,60}</string>
+            </dict>
+            <key>Shield0003.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1,123},{120,120}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -43,45 +56,6 @@
                 <key>sourceSize</key>
                 <string>{120,120}</string>
             </dict>
-            <key>04_knife_chooser.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{228,1},{150,150}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{150,150}}</string>
-                <key>sourceSize</key>
-                <string>{150,150}</string>
-            </dict>
-            <key>05_axe_chooser.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{1,152},{150,150}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{150,150}}</string>
-                <key>sourceSize</key>
-                <string>{150,150}</string>
-            </dict>
-            <key>06_shield_chooser.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{152,152},{150,150}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{150,150}}</string>
-                <key>sourceSize</key>
-                <string>{150,150}</string>
-            </dict>
         </dict>
         <key>metadata</key>
         <dict>
@@ -90,9 +64,9 @@
             <key>realTextureFileName</key>
             <string>skill.png</string>
             <key>size</key>
-            <string>{512,512}</string>
+            <string>{128,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:6ccf96d53dba0689ed00e57b062eca29:1/1$</string>
+            <string>$TexturePacker:SmartUpdate:d5b4bb50db86127c6e8782e2fb4a1100:1/1$</string>
             <key>textureFileName</key>
             <string>skill.png</string>
         </dict>
