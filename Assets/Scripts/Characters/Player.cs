@@ -13,10 +13,11 @@ public class Player : Character {
 	public Skills skill_axe;
 	public Skills skill_shield;
 	public OTSprite menu;
+	public OTAnimatingSprite currSprite;
 	
 	[SerializeField] private Rect hp_display;
 	[SerializeField] private SoundSprite soundMan;
-	public OTAnimatingSprite currSprite;
+	[SerializeField] private ModulatedSound mdSound;
 	
 	public bool shootingKnife;
 	[HideInInspector] public bool paused = false;
@@ -35,6 +36,7 @@ public class Player : Character {
 		hasShield = false;
 		spawnPos = thisTransform.position;
 		soundMan = GetComponent<SoundSprite>();
+		mdSound = GetComponent<ModulatedSound>();
 		//dialog = GameObject.Find("Dialog").GetComponent<Dialog>();
 	}
 	
@@ -109,9 +111,8 @@ public class Player : Character {
 				GameEventManager.TriggerGameUnpause();
 			}
 		}
+		mdSound.PercentSound(this);
 		Debug.Log ("Player_Shield" + hasShield);
-		Debug.Log ("Player_HP" + HP);
-		
 		UpdateMovement();
 	}
 	
@@ -147,15 +148,22 @@ public class Player : Character {
 		paused = false;
 		enabled = true;	
 	}
+	
+	////////// HP MANAGING ////////////////
 	public void RegenHP(int _val)
 	{
-		this.HP += _val;
-		
+		HP += _val;
+	}
+	public void DiminishHP(int _val)
+	{
+		HP -= _val;
 	}
 	private void DisplayHP()
 	{
 		
 	}
+	////////////////////////////////////////
+	
 	public OTAnimatingSprite getSprite()
 	{
 		return currSprite;
@@ -163,5 +171,9 @@ public class Player : Character {
 	public int getCurrentFrameIndex()
 	{
 		return currSprite.CurrentFrame().index;
+	}
+	private void manageLifeSound()
+	{
+		
 	}
 }

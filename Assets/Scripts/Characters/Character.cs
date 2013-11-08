@@ -8,7 +8,8 @@ public class Character : MonoBehaviour
 	public OTAnimation anim;
 
 	/** ADD **/
-	public int HP, res_phys, res_mag;
+	public int maxHP, res_phys, res_mag;
+	[HideInInspector] public int HP;
 	[HideInInspector] public bool isShot;
 	[HideInInspector] public bool talking;
 	[HideInInspector] public bool isGoDown;
@@ -260,6 +261,11 @@ public class Character : MonoBehaviour
 			vectorMove.x = 0f;
 			thisTransform.position = new Vector3(hitInfo.point.x+(halfMyX-0.01f),thisTransform.position.y, 0f); // .01 less than collision width.
 		}
+	}
+	
+	public Vector3 getVectorFixed()
+	{
+		return vectorFixed;	
 	}
 	
 	void ThroughPlatform()

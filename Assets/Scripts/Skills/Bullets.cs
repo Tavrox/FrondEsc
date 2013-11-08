@@ -21,7 +21,7 @@ public class Bullets : MonoBehaviour {
 	private bullDir bullDirection;
 	
 	private RaycastHit rayInfo;
-	private float rayDist = 0.7f;
+	private float rayDist = 2f;
 	private Vector3 mypos;
 	
 	protected int groundMask = 1 << 8 ; // Ground
@@ -33,6 +33,7 @@ public class Bullets : MonoBehaviour {
 	{
 		trans = transform;
 		Owner = GameObject.Find("Player").GetComponent<Player>();
+		mypos = new Vector3(trans.position.x,trans.position.y,trans.position.z);
 		trans.position = new Vector3(Owner.transform.position.x, Owner.transform.position.y, Owner.transform.position.z);
 		switch (Owner.facingDir)
 		{
@@ -76,8 +77,7 @@ public class Bullets : MonoBehaviour {
 			}
 		}
 		StartCoroutine( shieldTimer( Skill.shieldDuration) );
-		print ("Start Coroutine");
-		print ("Shield Duration " + Skill.shieldDuration);
+		checkCollisionEnviro();
 		
 	}
 	
@@ -185,6 +185,15 @@ public class Bullets : MonoBehaviour {
 			{
 				return (new Vector3 (0f,0f,0f));
 			}
+		}
+	}
+	
+	void checkCollisionEnviro()
+	{
+		if (Physics.Raycast(mypos, buildVectorBull(), rayDist, groundMask))
+		{
+			
+			
 		}
 	}
 }

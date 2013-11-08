@@ -17,7 +17,7 @@ public class Parallax : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		scrollVector.x = player.vectorFixed.x; //Need vectorFixed to be public
+		scrollVector.x = player.getVectorFixed().x; //Need vectorFixed to be public
 		scrollVector.x = scrollVector.x/scrollSpeed;
 		thisTransform.position += new Vector3(scrollVector.x,scrollVector.y,0f);
 	}

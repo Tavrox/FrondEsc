@@ -177,10 +177,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0ee8be1c7bb65c4782cd4f0d5e515d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myTeam: 0
-  HP: 100
+  anim: {fileID: 0}
+  maxHP: 150
   res_phys: 30
   res_mag: 20
+  HP: 100
   isShot: 0
   talking: 0
   isGoDown: 0
@@ -206,12 +207,37 @@ MonoBehaviour:
   hasShield: 1
   shieldDef: 100
   thisTransform: {fileID: 0}
-  rayDistUp: .375
+  vectorFixed: {x: 0, y: 0, z: 0}
+  moveVel: 4
+  jumpVel: 16
+  jump2Vel: 14
+  maxJumps: 2
+  fallVel: 18
+  jumps: 0
+  gravityY: 0
+  maxVelY: 0
+  halfMyX: 0
+  halfMyY: 0
+  absVel2X: 0
+  absVel2Y: 0
   position: {x: 0, y: 0, z: 0}
+  trans: {fileID: 0}
   dialog: {fileID: 0}
   skill_knife: {fileID: 11400000, guid: 736b7b4e8ecf13249a7dd154367748bd, type: 2}
   skill_axe: {fileID: 11400000, guid: d41fba480116c4942b92a98ac70108cb, type: 2}
   skill_shield: {fileID: 11400000, guid: 24854b585565b97419e637cdeb7c74b2, type: 2}
+  menu: {fileID: 0}
+  currSprite: {fileID: 0}
+  hp_display:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  soundMan: {fileID: 0}
+  mdSound: {fileID: 0}
+  shootingKnife: 0
+  paused: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -287,7 +313,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteParent: {fileID: 400004}
-  playerSprite: {fileID: 11400002}
+  animSprite: {fileID: 0}
+  animation: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
