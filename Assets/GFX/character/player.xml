@@ -277,7 +277,7 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>Player22Crounch.png</key>
+            <key>Player22CrounchDown.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{240,300},{80,100}}</string>
@@ -290,7 +290,7 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>Player23Crounch.png</key>
+            <key>Player23CrounchDown.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{320,300},{80,100}}</string>
@@ -329,7 +329,7 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>Player26Crounch.png</key>
+            <key>Player26CrounchUp.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{320,300},{80,100}}</string>
@@ -342,7 +342,7 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>Player27Crounch.png</key>
+            <key>Player27CrounchUp.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{240,300},{80,100}}</string>
@@ -446,7 +446,7 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>Player35AxeIdle.png</key>
+            <key>Player35AxeAttack.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{80,500},{80,100}}</string>
@@ -459,7 +459,7 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>Player36AxeIdle.png</key>
+            <key>Player36AxeAttack.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{160,500},{80,100}}</string>
@@ -547,7 +547,7 @@
             <key>size</key>
             <string>{512,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:5f49dece79a8e97825dd2525df1d4965:1/1$</string>
+            <string>$TexturePacker:SmartUpdate:499abe1b57f3701e46f3251032d72bb8:1/1$</string>
             <key>textureFileName</key>
             <string>player.png</string>
         </dict>
