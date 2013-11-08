@@ -111,7 +111,7 @@ public class Player : Character {
 				GameEventManager.TriggerGameUnpause();
 			}
 		}
-		mdSound.PercentSound(this);
+//		mdSound.PercentSound(this);
 		Debug.Log ("Player_Shield" + hasShield);
 		UpdateMovement();
 	}
