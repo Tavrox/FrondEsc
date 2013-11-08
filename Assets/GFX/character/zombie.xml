@@ -4,10 +4,257 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>zombie0001.png</key>
+            <key>Zombie0000death.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,1},{80,100}}</string>
+                <string>{{0,0},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0001death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{100,0},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0002death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{200,0},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0003death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{300,0},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0004death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{400,0},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0005death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,100},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0006death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{100,100},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0007death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{200,100},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0008death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{300,100},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0009death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{400,100},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0010death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,200},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0011death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{100,200},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0012death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{200,200},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0013death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{300,200},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0014death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{400,200},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0015death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,300},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0016death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{100,300},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0017death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{200,300},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>Zombie0018death.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{300,300},{100,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{100,100}}</string>
+                <key>sourceSize</key>
+                <string>{100,100}</string>
+            </dict>
+            <key>zombie0019attack.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{400,300},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -17,10 +264,10 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>zombie0002.png</key>
+            <key>zombie0020attack.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{82,1},{80,100}}</string>
+                <string>{{0,400},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -30,10 +277,10 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>zombie0003.png</key>
+            <key>zombie0021attack.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{163,1},{80,100}}</string>
+                <string>{{80,400},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -43,10 +290,10 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>zombie0004.png</key>
+            <key>zombie0022attack.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,102},{80,100}}</string>
+                <string>{{160,400},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -56,10 +303,10 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>zombie0005.png</key>
+            <key>zombie0023attack.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{82,102},{80,100}}</string>
+                <string>{{240,400},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -69,10 +316,10 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>zombie0006.png</key>
+            <key>zombie0024Hurt.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{163,102},{80,100}}</string>
+                <string>{{320,400},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -82,10 +329,10 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>zombie0007.png</key>
+            <key>zombie0025Hurt.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,203},{80,100}}</string>
+                <string>{{400,400},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -95,10 +342,10 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>zombie0008.png</key>
+            <key>zombie0026Hurt.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{82,203},{80,100}}</string>
+                <string>{{0,500},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -108,10 +355,10 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>zombieHurt0001.png</key>
+            <key>zombie0027Hurt.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{163,203},{80,100}}</string>
+                <string>{{80,500},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -121,10 +368,10 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>zombieHurt0002.png</key>
+            <key>zombie0028Hurt.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,304},{80,100}}</string>
+                <string>{{160,500},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -134,10 +381,10 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>zombieHurt0003.png</key>
+            <key>zombie0029Walk.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{82,304},{80,100}}</string>
+                <string>{{240,500},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -147,10 +394,10 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>zombieHurt0004.png</key>
+            <key>zombie0030Walk.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{163,304},{80,100}}</string>
+                <string>{{320,500},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -160,10 +407,75 @@
                 <key>sourceSize</key>
                 <string>{80,100}</string>
             </dict>
-            <key>zombieHurt0005.png</key>
+            <key>zombie0031Walk.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,405},{80,100}}</string>
+                <string>{{400,500},{80,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,100}}</string>
+                <key>sourceSize</key>
+                <string>{80,100}</string>
+            </dict>
+            <key>zombie0032Walk.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,600},{80,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,100}}</string>
+                <key>sourceSize</key>
+                <string>{80,100}</string>
+            </dict>
+            <key>zombie0033Walk.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{80,600},{80,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,100}}</string>
+                <key>sourceSize</key>
+                <string>{80,100}</string>
+            </dict>
+            <key>zombie0034Walk.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{160,600},{80,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,100}}</string>
+                <key>sourceSize</key>
+                <string>{80,100}</string>
+            </dict>
+            <key>zombie0035Walk.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{240,600},{80,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{80,100}}</string>
+                <key>sourceSize</key>
+                <string>{80,100}</string>
+            </dict>
+            <key>zombie0036Walk.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{320,600},{80,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -181,9 +493,9 @@
             <key>realTextureFileName</key>
             <string>zombie.png</string>
             <key>size</key>
-            <string>{256,512}</string>
+            <string>{512,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:82660f5c9e7059ab75a150d1524c5360:1/1$</string>
+            <string>$TexturePacker:SmartUpdate:ba97be6c102ade6e7b6852484c7decef:1/1$</string>
             <key>textureFileName</key>
             <string>zombie.png</string>
         </dict>
