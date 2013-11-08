@@ -8,7 +8,9 @@ public class Character : MonoBehaviour
 	public OTAnimation anim;
 
 	/** ADD **/
-	public int maxHP, res_phys, res_mag;
+	public int res_phys, res_mag;
+	
+	public int maxHP;
 	[HideInInspector] public int HP;
 	[HideInInspector] public bool isShot;
 	[HideInInspector] public bool talking;
@@ -83,6 +85,7 @@ public class Character : MonoBehaviour
 	// Use this for initialization
 	public virtual void Start () 
 	{
+		HP = maxHP;
 		maxVelY = fallVel;
 		vectorMove.y = 0;
 		halfMyX = GetComponentInChildren<Transform>().GetComponentInChildren<OTAnimatingSprite>().size.x * 0.5f;

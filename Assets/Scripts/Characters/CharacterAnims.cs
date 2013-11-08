@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CharacterAnims : MonoBehaviour 
 {
-	public enum anim { None, WalkLeft, WalkRight, RopeLeft, RopeRight, Climb, ClimbStop, StandLeft, StandRight, HangLeft, HangRight, FallLeft, FallRight , ShootLeft, ShootRight }
+	public enum anim { None, WalkLeft, WalkRight, RopeLeft, RopeRight, Climb, ClimbStop, StandLeft, StandRight, HangLeft, HangRight, FallLeft, FallRight , ShootLeft, ShootRight, Crounch }
 	
 	public Transform spriteParent;
 	public OTAnimatingSprite animSprite;
@@ -107,6 +107,11 @@ public class CharacterAnims : MonoBehaviour
 		{
 			currentAnim = anim.None;
 			animSprite.looping = false;
+		}
+		if (_character.isCrounch == true)
+		{
+			currentAnim = anim.Crounch;
+			animSprite.Play("crounch");
 		}
 	}
 	

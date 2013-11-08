@@ -35,4 +35,9 @@ public class Collectible : MonoBehaviour {
 		}
 		Destroy(this.gameObject);
 	}
+	
+	private void fade()
+	{
+		
+	}
 }

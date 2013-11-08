@@ -15,17 +15,17 @@ public class TestMode : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		if (Input.GetKey(KeyCode.Keypad1))
+		if (Input.GetKeyDown(KeyCode.Keypad1))
 		{
-			Debug.Log("Player HP + 10");
-			player.RegenHP(10);
+			Debug.Log("Player HP + 8");
+			player.RegenHP(8);
 		}
-		if (Input.GetKey(KeyCode.Keypad2))
+		if (Input.GetKeyDown(KeyCode.Keypad2))
 		{
-			Debug.Log("Player HP - 20");
-			player.DiminishHP(20);
+			Debug.Log("Player HP - 8");
+			player.DiminishHP(8);
 		}
-		if (Input.GetKey(KeyCode.Keypad3))
+		if (Input.GetKeyDown(KeyCode.Keypad3))
 		{
 			Debug.Log("Player HP" + player.HP);
 		}

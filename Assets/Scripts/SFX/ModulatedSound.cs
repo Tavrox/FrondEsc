@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class ModulatedSound : MonoBehaviour {
-
+	
 	public MasterAudioGroup sound;
 	
 	public enum condType { Percent, Steps } ;
@@ -26,15 +26,10 @@ public class ModulatedSound : MonoBehaviour {
 	
 	}
 	
-	public void PercentSound(Player playr)
+	public void PercentSound(Character charac)
 	{
-		float percentHP = playr.HP / playr.maxHP;
-		print (percentHP);
+		float percentHP = (charac.HP * 1.0f / charac.maxHP * 1.0f);		
+		sound.groupMasterVolume = percentHP;
 		MasterAudio.PlaySound(sound.name);
-		
-		sound.groupMasterVolume = 1f;
-		print ( "Sound S1 " + sound.groupMasterVolume);
-		sound.groupMasterVolume = 0.5f;
-		print ( "Sound S2 " + sound.groupMasterVolume);
 	}
 }
